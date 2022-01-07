@@ -1,5 +1,6 @@
 body {
     background: url("../img/bgindex.jpg") no-repeat;
+    background-size: auto;
 }
 
 .ui.center.aligned.header.xd {
@@ -74,4 +75,18 @@ h3 {
 
 .xd-ma p a {
     margin: auto;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1024px) and (orientation: portrait){
+    body {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 550px) and (orientation: portrait){
+    body {
+        background-size: auto;
+    }
 }
