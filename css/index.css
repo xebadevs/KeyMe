@@ -8,11 +8,12 @@ body {
     margin: 30px;
 }
 
-.z {
-    /*border: 1px solid greenyellow;*/
+.x-cont-header {
     width: 80%;
     margin: auto;
     height: 200px;
+
+    /* Glass style */
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.65);
@@ -28,5 +29,49 @@ h3 {
 }
 
 .empty {
-    height: 10%;
+    height: 8%;
+}
+
+/* LOGIN */
+.x-cont-login {
+    width: clamp(300px, 400px, 400px);
+    margin: auto;
+
+    /* Glass style */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.65);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.ui.form {
+    padding: clamp(5px, 40px, 50px);
+    margin: auto;
+}
+
+.ui.form .field>label {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.xd-df {
+    display: flex;
+}
+
+.xd-df button {
+    align-items: center;
+}
+
+.ui.submit.button {
+    margin: 50px auto 10px auto;
+}
+
+.xd-ma p {
+    display: flex;
+}
+
+.xd-ma p a {
+    margin: auto;
 }
