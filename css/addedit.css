@@ -1,0 +1,100 @@
+body {
+    background: url("../img/bgmain.jpg") no-repeat;
+    background-size: auto;
+}
+
+/* Header */
+.ui.center.aligned.header.xd {
+    font-size: 4em;
+    color: whitesmoke;
+    margin: 8px auto;
+}
+
+.x-cont-header {
+    width: 80%;
+    margin: auto;
+    height: 100px;
+
+    /* Glass style */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.65);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+/* Empty div*/
+.empty {
+    height: 8%;
+}
+
+/* --------------- ADD BOX --------------- */
+.x-cont-add {
+    width: clamp(300px, 400px, 400px);
+    margin: auto;
+
+    /* Glass style */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.65);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.ui.form {
+    padding: clamp(5px, 40px, 50px);
+    margin: auto;
+}
+
+.ui.form .field>label {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.xd-df {
+    display: flex;
+}
+
+.xd-df button {
+    align-items: center;
+}
+
+.ui.submit.button,
+.ui.inverted.primary.button {
+    margin: 30px auto 0 auto;
+    width: 90px;
+}
+
+.ui.inverted.primary.button.x-del:hover,
+.ui.inverted.primary.button.x-del:focus {
+    background-color: rgba(155, 30, 20, .5);
+}
+
+.xd-ma p {
+    display: flex;
+}
+
+.xd-ma p a {
+    margin: auto;
+}
+
+.cont-span {
+    width: 100%;
+    text-align: center;
+    color: #54C8FF;
+    margin-top: 25px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1024px) and (orientation: portrait){
+    body {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 550px) and (orientation: portrait){
+    body {
+        background-size: auto;
+    }
+}

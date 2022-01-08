@@ -28,6 +28,7 @@ body {
     height: 8%;
 }
 
+
 /* --------------- SEARCH --------------- */
 .ui.search {
     display: flex;
@@ -37,6 +38,11 @@ body {
     margin: auto;
     width: 300px;
 }
+
+.ui.icon.input>input {
+    text-align: center;
+}
+
 
 /* --------------- VIEW ALL / ADD / LOGOUT --------------- */
 .options {
@@ -68,6 +74,7 @@ body {
     background-color: rgba(155, 30, 20, .5);
 }
 
+
 /* --------------- TABLES --------------- */
 
 .cont-table {
@@ -76,9 +83,9 @@ body {
 }
 
 .ui.table {
-    width: 60%;
-    margin: auto;
     color: whitesmoke;
+    margin: auto;
+
 
     /* Glass style */
     backdrop-filter: blur(16px) saturate(180%);
@@ -90,6 +97,7 @@ body {
 
 .ui.table tr th {
     color: whitesmoke;
+    height: 50px;
 
     /* Glass style */
     backdrop-filter: blur(16px) saturate(180%);
@@ -101,6 +109,139 @@ body {
     text-align: center;
 }
 
-.ui.table td a {
-    cursor: pointer;
+
+/* --------------- TABLE ALT --------------- */
+
+.ui[class*="very basic"].table {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.65);
+
+    width:550px;
+}
+
+.ui[class*="very basic"].table:not(.sortable):not(.striped) thead tr:first-child th {
+    padding: 10px;
+}
+
+.ui.celled.table tr td {
+    width: 1px;
+}
+
+.username {
+    font-weight: bold;
+}
+
+/* --------------- ADD - EDIT --------------- */
+.x-cont-login {
+    width: clamp(300px, 400px, 400px);
+    margin: auto;
+
+    /* Glass style */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.65);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.ui.form {
+    padding: clamp(5px, 40px, 50px);
+    margin: auto;
+}
+
+.ui.form .field>label {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.xd-df {
+    display: flex;
+}
+
+.xd-df button {
+    align-items: center;
+}
+
+.ui.submit.button {
+    margin: 50px auto 10px auto;
+}
+
+.xd-ma p {
+    display: flex;
+}
+
+.xd-ma p a {
+    margin: auto;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1024px) and (orientation: portrait){
+    body {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape){
+    .cont-table {
+        height: 40%;
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width: 550px) and (orientation: portrait){
+    body {
+        background-size: auto;
+    }
+    .ui[class*="very basic"].table {
+        width: 350px;
+    }
+    .ui[class*="very basic"].table:not(.sortable):not(.striped) thead tr:first-child th {
+        color: transparent;
+        height: 0;
+    }
+}
+
+@media screen and (max-width: 540px) and (orientation: portrait){
+    .ui[class*="very basic"].table {
+        width: 300px;
+    }
+    .cont-table {
+        height: 45%;
+        overflow: auto;
+    }
+    .options button {
+        width: 95px;
+    }
+}
+
+@media screen and (max-width: 320px) and (orientation: portrait){
+    .ui[class*="very basic"].table {
+        width: 250px;
+    }
+    .cont-table {
+        height: 40%;
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width: 280px) and (orientation: portrait) {
+    .x-cont-header {
+        width: 70%;
+        margin: auto;
+        height: 100px;
+    }
+    .ui.search div {
+        margin: auto;
+        width: 250px;
+    }
+    .ui[class*="very basic"].table {
+        width: 250px;
+    }
+    .cont-table {
+        height: 40%;
+        overflow: auto;
+    }
 }
