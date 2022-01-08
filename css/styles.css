@@ -2,8 +2,7 @@ body {
     background: darkgrey;
 }
 
-/* HEADER */
-
+/* ------------------------- HEADER ------------------------- */
 footer {
     display: flex;
     flex-direction: column;

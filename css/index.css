@@ -33,7 +33,7 @@ h3 {
     height: 8%;
 }
 
-/* LOGIN */
+/* ------------------------- LOGIN ------------------------- */
 .x-cont-login {
     width: clamp(300px, 400px, 400px);
     margin: auto;
@@ -78,7 +78,7 @@ h3 {
 }
 
 
-/* MEDIA QUERIES */
+/* ------------------------- MEDIA QUERIES ------------------------- */
 @media screen and (max-width: 1024px) and (orientation: portrait){
     body {
         background-size: cover;

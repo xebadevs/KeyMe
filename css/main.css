@@ -3,7 +3,7 @@ body {
     background-size: auto;
 }
 
-/* Header */
+/* ------------------------- HEADER ------------------------- */
 .ui.center.aligned.header.xd {
     font-size: 4em;
     color: whitesmoke;
@@ -29,7 +29,7 @@ body {
 }
 
 
-/* --------------- SEARCH --------------- */
+/* ------------------------- SEARCH ------------------------- */
 .ui.search {
     display: flex;
 }
@@ -44,7 +44,7 @@ body {
 }
 
 
-/* --------------- VIEW ALL / ADD / LOGOUT --------------- */
+/* ------------------------- VIEW ALL / ADD / LOGOUT ------------------------- */
 .options {
     display: flex;
     width: 100%;
@@ -75,8 +75,7 @@ body {
 }
 
 
-/* --------------- TABLES --------------- */
-
+/* ------------------------- TABLES ------------------------- */
 .cont-table {
     height: 50%;
     overflow: auto;
@@ -110,14 +109,14 @@ body {
 }
 
 
-/* --------------- TABLE ALT --------------- */
+/* ------------------------- TABLE ALT ------------------------- */
 
 .ui[class*="very basic"].table {
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.65);
 
-    width:550px;
+    width:800px;
 }
 
 .ui[class*="very basic"].table:not(.sortable):not(.striped) thead tr:first-child th {
@@ -132,7 +131,7 @@ body {
     font-weight: bold;
 }
 
-/* --------------- ADD - EDIT --------------- */
+/* ------------------------- ADD / EDIT ------------------------- */
 .x-cont-login {
     width: clamp(300px, 400px, 400px);
     margin: auto;
@@ -177,7 +176,7 @@ body {
 }
 
 
-/* MEDIA QUERIES */
+/* ------------------------- MEDIA QUERIES ------------------------- */
 @media screen and (max-width: 1024px) and (orientation: portrait){
     body {
         background-size: cover;
