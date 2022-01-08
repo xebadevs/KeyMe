@@ -34,7 +34,7 @@
                 <div class="field">
                     <label>Password</label>
                     <div class="ui left icon input">
-                        <input type="password" placeholder="Insert your Master Password">
+                        <input type="password" placeholder="Create your Master Password">
                         <i class="lock icon"></i>
                     </div>
                 </div>
