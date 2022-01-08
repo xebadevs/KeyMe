@@ -1,0 +1,66 @@
+body {
+    background: url("../img/bgmain.jpg") no-repeat;
+    background-size: auto;
+}
+
+/* Header */
+.ui.center.aligned.header.xd {
+    font-size: 4em;
+    color: whitesmoke;
+    margin: 8px auto;
+}
+
+.x-cont-header {
+    width: 80%;
+    margin: auto;
+    height: 100px;
+
+    /* Glass style */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.65);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+/* Empty div*/
+.empty {
+    height: 8%;
+}
+
+/* --------------- SEARCH --------------- */
+.ui.search {
+    display: flex;
+}
+
+.ui.search div {
+    margin: auto;
+    width: 300px;
+}
+
+/* --------------- VIEW ALL / ADD / LOGOUT --------------- */
+.options {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+    position: absolute;
+    margin: auto;
+    bottom: 30px;
+}
+
+.options button {
+    width: 150px;
+}
+
+.ui.inverted.primary.button.view-all:hover {
+    background-color: rgba(30, 50, 95, .6);
+}
+
+.ui.inverted.primary.button.add:hover {
+    background-color: rgba(30, 50, 95, .6);
+}
+
+.ui.inverted.primary.button.logout:hover {
+    background-color: rgba(155, 30, 20, .5);
+}

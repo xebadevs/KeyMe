@@ -17,17 +17,17 @@
                     </div>
                 </div>
                 <div class="xd-df">
-                    <div class="ui inverted primary submit button">
+                    <button class="ui inverted primary submit button">
                         <p>LOGIN</p>
-                    </div>
+                    </button>
                 </div>
                 <br>
                 <div class="xd-ma">
                     <p>
-                        <a href="#">Register</a>
+                        <a href="./files/register.php">Register</a>
                     </p>
                     <p>
-                        <a href="#">I forgot my password</a>
+                        <a href="./files/recover.php">I forgot my password</a>
                     </p>
                 </div>
             </div>
