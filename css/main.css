@@ -53,14 +53,54 @@ body {
     width: 150px;
 }
 
-.ui.inverted.primary.button.view-all:hover {
+.ui.inverted.primary.button.view-all:hover,
+.ui.inverted.primary.button.view-all:focus{
     background-color: rgba(30, 50, 95, .6);
 }
 
-.ui.inverted.primary.button.add:hover {
+.ui.inverted.primary.button.add:hover,
+.ui.inverted.primary.button.add:focus{
     background-color: rgba(30, 50, 95, .6);
 }
 
-.ui.inverted.primary.button.logout:hover {
+.ui.inverted.primary.button.logout:hover,
+.ui.inverted.primary.button.logout:focus{
     background-color: rgba(155, 30, 20, .5);
+}
+
+/* --------------- TABLES --------------- */
+
+.cont-table {
+    height: 50%;
+    overflow: auto;
+}
+
+.ui.table {
+    width: 60%;
+    margin: auto;
+    color: whitesmoke;
+
+    /* Glass style */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.65);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.ui.table tr th {
+    color: whitesmoke;
+
+    /* Glass style */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.65);
+}
+
+.ui.table td, .ui.table tr {
+    text-align: center;
+}
+
+.ui.table td a {
+    cursor: pointer;
 }
