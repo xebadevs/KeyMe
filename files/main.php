@@ -69,9 +69,15 @@ require_once('header.php');
     <div class="empty"></div>
 
     <div class="options">
-        <button class="ui inverted primary button view-all">View All</button>
-        <button class="ui inverted primary button add">Add</button>
-        <button class="ui inverted primary button logout">Logout</button>
+        <form action="">
+            <button class="ui inverted primary button view-all">View All</button>
+        </form>
+        <form action="">
+            <button class="ui inverted primary button add">Add</button>
+        </form>
+        <form action="">
+            <button class="ui inverted primary button logout">Logout</button>
+        </form>
     </div>
 </body>
 </html>

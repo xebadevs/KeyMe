@@ -23,35 +23,37 @@
 <div class="x-cont-login">
     <div class="ui column grid">
         <div class="column">
-            <div class="ui form">
-                <div class="field">
-                    <label>Email</label>
-                    <div class="ui left icon input">
-                        <input type="text" placeholder="Username">
-                        <i class="user icon"></i>
+            <form action="">
+                <div class="ui form">
+                    <div class="field">
+                        <label>Email</label>
+                        <div class="ui left icon input">
+                            <input type="text" placeholder="Username">
+                            <i class="user icon"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="field">
-                    <label>Password</label>
-                    <div class="ui left icon input">
-                        <input type="password" placeholder="Create your Master Password">
-                        <i class="lock icon"></i>
+                    <div class="field">
+                        <label>Password</label>
+                        <div class="ui left icon input">
+                            <input type="password" placeholder="Create your Master Password">
+                            <i class="lock icon"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="field">
-                    <label>Re Password</label>
-                    <div class="ui left icon input">
-                        <input type="password" placeholder="Repeat your Master Password">
-                        <i class="lock icon"></i>
+                    <div class="field">
+                        <label>Re Password</label>
+                        <div class="ui left icon input">
+                            <input type="password" placeholder="Repeat your Master Password">
+                            <i class="lock icon"></i>
+                        </div>
                     </div>
+                    <div class="xd-df">
+                        <button class="ui inverted primary submit button">
+                            <p>REGISTER</p>
+                        </button>
+                    </div>
+                    <br>
                 </div>
-                <div class="xd-df">
-                    <button class="ui inverted primary submit button">
-                        <p>REGISTER</p>
-                    </button>
-                </div>
-                <br>
-            </div>
+            </form>
         </div>
     </div>
 </div>
