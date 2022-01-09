@@ -25,41 +25,43 @@
 <div class="x-cont-add">
     <div class="ui column grid">
         <div class="column">
-            <div class="ui form">
-                <div class="field">
-                    <label>Reference</label>
-                    <div class="ui left icon input">
-                        <input type="text" placeholder="Insert the reference">
-                        <i class="user icon"></i>
+            <form action="">
+                <div class="ui form">
+                    <div class="field">
+                        <label>Reference</label>
+                        <div class="ui left icon input">
+                            <input type="text" placeholder="Insert the reference">
+                            <i class="user icon"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="field">
-                    <label>User</label>
-                    <div class="ui left icon input">
-                        <input type="password" placeholder="Insert the user">
-                        <i class="lock icon"></i>
+                    <div class="field">
+                        <label>User</label>
+                        <div class="ui left icon input">
+                            <input type="password" placeholder="Insert the user">
+                            <i class="lock icon"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="field">
-                    <label>Password</label>
-                    <div class="ui left icon input">
-                        <input type="password" placeholder="Insert the password">
-                        <i class="lock icon"></i>
+                    <div class="field">
+                        <label>Password</label>
+                        <div class="ui left icon input">
+                            <input type="password" placeholder="Insert the password">
+                            <i class="lock icon"></i>
+                        </div>
                     </div>
+                    <div class="cont-span">
+                        <span> Click to... </span>
+                    </div>
+                    <div class="xd-df">
+                        <button class="ui inverted primary button x-del">
+                            <p>Delete</p>
+                        </button>
+                        <button class="ui inverted primary submit button">
+                            <p>Save</p>
+                        </button>
+                    </div>
+                    <br>
                 </div>
-                <div class="cont-span">
-                    <span> Succesfully saved </span>
-                </div>
-                <div class="xd-df">
-                    <button class="ui inverted primary button x-del">
-                        <p>Delete</p>
-                    </button>
-                    <button class="ui inverted primary submit button">
-                        <p>Save</p>
-                    </button>
-                </div>
-                <br>
-            </div>
+            </form>
         </div>
     </div>
 </div>
