@@ -31,7 +31,7 @@ include_once('session.php');
                         </div>
                     </div>
                 </td>
-                <td><a href="#"><i class="edit outline icon"></i></a></td>
+                <td><a href="./edit.php"><i class="edit outline icon"></i></a></td>
             </tr>
 
             <tr>
@@ -73,12 +73,16 @@ include_once('session.php');
         <form action="">
             <button class="ui inverted primary button view-all">View All</button>
         </form>
-        <form action="">
-            <button class="ui inverted primary button add">Add</button>
-        </form>
-        <form action="">
-            <button class="ui inverted primary button logout">Logout</button>
-        </form>
+            <a href="./add.php">
+                <button class="ui inverted primary button add">
+                    Add
+                </button>
+            </a>
+        <a href="./logout.php">
+            <button class="ui inverted primary button add">
+                Logout
+            </button>
+        </a>
     </div>
 </body>
 </html>

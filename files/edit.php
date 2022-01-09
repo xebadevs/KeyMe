@@ -56,12 +56,20 @@
                         <span> Click to... </span>
                     </div>
                     <div class="xd-df">
-                        <button class="ui inverted primary button x-del">
-                            <p>Delete</p>
-                        </button>
-                        <button class="ui inverted primary submit button">
-                            <p>Save</p>
-                        </button>
+                        <div>
+                            <form action="" method="post">
+                                <button class="ui inverted primary button x-del">
+                                    <p>Delete</p>
+                                </button>
+                            </form>
+                        </div>
+                        <div>
+                            <form action="" method="post">
+                                <button class="ui inverted primary submit button">
+                                    <p>Save</p>
+                                </button>
+                            </form>
+                        </div>
                     </div>
                     <br>
                 </div>

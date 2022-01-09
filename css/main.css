@@ -157,6 +157,7 @@ body {
 
 .xd-df {
     display: flex;
+    justify-content: space-between;
 }
 
 .xd-df button {
