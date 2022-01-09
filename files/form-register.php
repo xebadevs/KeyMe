@@ -1,8 +1,5 @@
 <?php
 
-include("./session.php");
-
-$connection = mysqli_connect('localhost', 'root', '', 'keyme');
 $email = '';
 $password = '';
 $repassword = '';
@@ -24,7 +21,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 //        header('location:./register.php');
 
     if($error === NULL) {
-        require_once('connection.php');
+        $connection = mysqli_connect('localhost', 'root', '', 'keyme');
         $query = "INSERT INTO db_users (user_email, user_password) VALUES ('$email', '$password')";
         $response = mysqli_query($connection, $query);
         

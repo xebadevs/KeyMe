@@ -6,14 +6,14 @@
                     <div class="field">
                         <label>Email</label>
                         <div class="ui left icon input">
-                            <input type="text" name="email" placeholder="Insert your email">
+                            <input type="text" name="email" placeholder="Insert your email" required>
                             <i class="user icon"></i>
                         </div>
                     </div>
                     <div class="field">
                         <label>Password</label>
                         <div class="ui left icon input">
-                            <input type="password" name="password" placeholder="Insert your Master Password">
+                            <input type="password" name="password" placeholder="Insert your Master Password" required>
                             <i class="lock icon"></i>
                         </div>
                     </div>
