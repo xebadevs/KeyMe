@@ -18,14 +18,20 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $error = true;
     }
 
-//        header('location:./register.php');
-
     if($error === NULL) {
         $connection = mysqli_connect('localhost', 'root', '', 'keyme');
-        $query = "INSERT INTO db_users (user_email, user_password) VALUES ('$email', '$password')";
-        $response = mysqli_query($connection, $query);
-        
-    }else{
-        header('location:./error-log.php');
+
+        $email_exist = "SELECT user_email FROM db_users WHERE user_email='$email'";
+        $resp = mysqli_query($connection, $email_exist);
+
+        $closting = mysqli_num_rows($resp);
+
+        if($closting > 0){
+            header('location:./error-log.php'); // EXISTING USER!!
+        }else{
+            $query = "INSERT INTO db_users (user_email, user_password) VALUES ('$email', '$password')";
+            $response = mysqli_query($connection, $query);
+            header('location:../index.php'); // SUCCESSFUL REGISTRATION!!
+        }
     }
 }

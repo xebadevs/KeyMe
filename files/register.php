@@ -34,21 +34,21 @@
                     <div class="field">
                         <label>Email</label>
                         <div class="ui left icon input">
-                            <input type="text" placeholder="Username" name="email">
+                            <input type="text" placeholder="Username" name="email" required>
                             <i class="user icon"></i>
                         </div>
                     </div>
                     <div class="field">
                         <label>Password</label>
                         <div class="ui left icon input">
-                            <input type="password" placeholder="Create your Master Password" name="password">
+                            <input type="password" placeholder="Create your Master Password" name="password" required>
                             <i class="lock icon"></i>
                         </div>
                     </div>
                     <div class="field">
                         <label>Re Password</label>
                         <div class="ui left icon input">
-                            <input type="password" placeholder="Repeat your Master Password" name="repassword">
+                            <input type="password" placeholder="Repeat your Master Password" name="repassword" required>
                             <i class="lock icon"></i>
                         </div>
                     </div>
