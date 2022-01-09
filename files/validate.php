@@ -45,7 +45,7 @@ if($data > 0){
     header('location:./main.php');
 }else{
 //    $error_message = 'ERROR. PLEASE TRY AGAIN';
-    header('location:../index.php');
+    header('location:./error.php');
 }
 
 mysqli_free_result($response);
