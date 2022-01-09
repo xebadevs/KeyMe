@@ -1,40 +1,7 @@
-<?php
-
-    require_once('connect.php');
-
-    $email = '';
-    $password = '';
-    $error_message = '';
-
-    if($_SERVER['REQUEST_METHOD'] == 'POST'){
-      $email = $_POST['email'];
-      $password = $_POST['password'];
-    }
-
-    session_start();
-    $_SESSION['email'] = $email;
-
-    $query = "SELECT * FROM db_users where user_email='$email' and user_password='$password'";
-    $response = mysqli_query($connection, $query);
-
-    $data = mysqli_num_rows($response);
-
-    if($data){
-        header('location:files/main.php');
-    }else{
-        $error_message = 'ERROR. PLEASE TRY AGAIN';
-    }
-
-    mysqli_free_result($response);
-    mysqli_close($connection);
-
-
-?>
-
 <div class="x-cont-login">
     <div class="ui column grid">
         <div class="column">
-            <form action="" method="post">
+            <form action="./files/validate.php" method="post">
                 <div class="ui form">
                     <div class="field">
                         <label>Email</label>
@@ -53,7 +20,7 @@
 
                     <div class="wrong-pass">
 <!--                        <span> ERROR. PLEASE TRY AGAIN </span>-->
-                        <span> <?= $error_message ?> </span>
+                        <span></span>
                     </div>
 
                     <div class="xd-df">
