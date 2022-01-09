@@ -1,3 +1,9 @@
+<?php
+
+
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,6 +15,12 @@
     <link rel="stylesheet" href="../css/semantic.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
 </head>
 <body>
 <div class="empty"></div>
@@ -23,7 +35,7 @@
 <div class="x-cont-login">
     <div class="ui column grid">
         <div class="column">
-            <form action="">
+            <form action="" method="post">
                 <div class="ui form">
                     <div class="field">
                         <label>Email</label>
@@ -63,6 +75,7 @@
 <div>
     <?php require_once('../files/footer.php'); ?>
 </div>
+
 
 
 </body>

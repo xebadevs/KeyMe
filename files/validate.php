@@ -1,29 +1,6 @@
 <?php
-//    function connect(){
-//        try{
-//            $host = 'localhost';
-//            $database = 'keyme';
-//            $user = 'root';
-//            $pass = '';
-//
-//            $pdo = new PDO(
-//                "mysql:host = $host; dbname = $database", $user,  $pass
-//            );
-//
-////            echo 'SUCCESSFUL CONNECTION TO THE DATABASE';
-//
-//        }catch(PDOException $error){
-//            echo $error -> getMessage();
-//        }
-//    }
-//
-//    connect();
 
-//    $connection = mysqli_connect('localhost', 'root', '', 'keyme');
-
-// ---------------------------------------------------------------------------------------------------
-
-$connection = mysqli_connect('localhost', 'root', '', 'keyme');
+    require_once('connection.php');
 
 $email = '';
 $password = '';
@@ -45,7 +22,7 @@ if($data > 0){
     header('location:./main.php');
 }else{
 //    $error_message = 'ERROR. PLEASE TRY AGAIN';
-    header('location:./error.php');
+    header('location:./error-log.php');
 }
 
 mysqli_free_result($response);
