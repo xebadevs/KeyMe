@@ -1,7 +1,6 @@
 <?php
 
-    require_once('connection.php');
-
+$connection = mysqli_connect('localhost', 'root', '', 'keyme');
 $email = '';
 $password = '';
 $error_message = '';
@@ -21,7 +20,6 @@ $data = mysqli_num_rows($response);
 if($data > 0){
     header('location:./main.php');
 }else{
-//    $error_message = 'ERROR. PLEASE TRY AGAIN';
     header('location:./error-log.php');
 }
 

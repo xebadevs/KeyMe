@@ -1,7 +1,5 @@
 <?php
-
-
-
+    include("./session.php");
 ?>
 
 <!doctype html>
@@ -35,26 +33,26 @@
 <div class="x-cont-login">
     <div class="ui column grid">
         <div class="column">
-            <form action="" method="post">
+            <form action="./form-register.php" method="post">
                 <div class="ui form">
                     <div class="field">
                         <label>Email</label>
                         <div class="ui left icon input">
-                            <input type="text" placeholder="Username">
+                            <input type="text" placeholder="Username" name="email">
                             <i class="user icon"></i>
                         </div>
                     </div>
                     <div class="field">
                         <label>Password</label>
                         <div class="ui left icon input">
-                            <input type="password" placeholder="Create your Master Password">
+                            <input type="password" placeholder="Create your Master Password" name="password">
                             <i class="lock icon"></i>
                         </div>
                     </div>
                     <div class="field">
                         <label>Re Password</label>
                         <div class="ui left icon input">
-                            <input type="password" placeholder="Repeat your Master Password">
+                            <input type="password" placeholder="Repeat your Master Password" name="repassword">
                             <i class="lock icon"></i>
                         </div>
                     </div>
