@@ -23,21 +23,23 @@
 <div class="x-cont-login">
     <div class="ui column grid">
         <div class="column">
-            <div class="ui form">
-                <div class="field">
-                    <label>Email</label>
-                    <div class="ui left icon input">
-                        <input type="text" placeholder="Username">
-                        <i class="user icon"></i>
+            <form action="" method="post">
+                <div class="ui form">
+                    <div class="field">
+                        <label>Email</label>
+                        <div class="ui left icon input">
+                            <input type="text" placeholder="Username">
+                            <i class="user icon"></i>
+                        </div>
                     </div>
+                    <div class="xd-df">
+                        <button class="ui inverted primary submit button">
+                            <p>SEND NEW PASSWORD</p>
+                        </button>
+                    </div>
+                    <br>
                 </div>
-                <div class="xd-df">
-                    <button class="ui inverted primary submit button">
-                        <p>SEND NEW PASSWORD</p>
-                    </button>
-                </div>
-                <br>
-            </div>
+            </form>
         </div>
     </div>
 </div>
