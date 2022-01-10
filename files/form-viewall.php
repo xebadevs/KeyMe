@@ -49,8 +49,8 @@
                         </div>
                     </td>
                     <td>
-                        <a href="./edit.php "><i class="edit outline icon"></i></a>
-                        <a href="./delete.php "><i class="trash alternate icon"></i></a>
+                        <a href="./edit.php?ref=<?= $res['pass_reference']?>"><i class="edit outline icon"></i></a>
+                        <a href="./delete.php?ref=<?= $res['pass_reference']?>"><i class="trash alternate icon"></i></a>
                 </tr>
             </td> <?php } ?>
         </tbody>
@@ -60,7 +60,7 @@
 <div class="empty"></div>
 
 <div class="options">
-    <a href="./add.php" class="ui inverted primary button">
+    <a href="./form-viewall.php" class="ui inverted primary button">
         View All
     </a>
     <a href="./add.php" class="ui inverted primary button">
