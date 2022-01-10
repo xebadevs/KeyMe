@@ -20,6 +20,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['email'] = $email;
         }
     else {
+        mysqli_close($connection);
         header('location:./error-log.php');
         }
     mysqli_free_result($response);

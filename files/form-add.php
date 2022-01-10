@@ -5,9 +5,12 @@
     $user = '';
     $password = '';
 
-    echo 'Bienvenido al form-add';
 
-    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+echo 'Bienvenido al form-add';
+echo '<hr>';
+
+
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $reference = $_POST['reference'];
         $user = $_POST['user'];
         $password = $_POST['password'];
@@ -19,10 +22,12 @@
         $response = mysqli_query($connection, $query);
 
         $row = mysqli_fetch_row($response);
-        $show_row = $row[0];
-        echo $show_row;
+        $user_id = $row[0];
         }
     }
+
+
+echo '<hr>';
 
 echo '<br>';
     echo $reference;

@@ -27,10 +27,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $closting = mysqli_num_rows($resp);
 
         if($closting > 0){
+            mysqli_close($connection);
             header('location:./error-log.php'); // EXISTING USER!!
         }else{
             $query = "INSERT INTO db_users (user_email, user_password) VALUES ('$email', '$password')";
             $response = mysqli_query($connection, $query);
+            mysqli_close($connection);
             header('location:../index.php'); // SUCCESSFUL REGISTRATION!!
         }
     }
