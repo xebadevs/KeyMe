@@ -23,6 +23,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
         $row = mysqli_fetch_row($response);
         $user_id = $row[0];
+
+        echo $user_id;
+
+        $query_add = "INSERT INTO db_passwords (fk_user_id, pass_reference, pass_username, pass_password) VALUES ('$user_id', '$reference', '$user', '$password')";
+        $response_add = mysqli_query($connection, $query_add);
+        mysqli_close($connection);
         }
     }
 
