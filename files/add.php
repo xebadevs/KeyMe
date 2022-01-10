@@ -34,21 +34,21 @@
                         <div class="field">
                             <label>Reference</label>
                             <div class="ui left icon input">
-                                <input type="text" placeholder="Insert the reference" name="reference">
+                                <input type="text" placeholder="Insert the reference" name="reference" required>
                                 <i class="user icon"></i>
                             </div>
                         </div>
                         <div class="field">
                             <label>User</label>
                             <div class="ui left icon input">
-                                <input type="password" placeholder="Insert the user" name="user">
+                                <input type="password" placeholder="Insert the user" name="user" required>
                                 <i class="lock icon"></i>
                             </div>
                         </div>
                         <div class="field">
                             <label>Password</label>
                             <div class="ui left icon input">
-                                <input type="password" placeholder="Insert the password" name="password">
+                                <input type="password" placeholder="Insert the password" name="password" required>
                                 <i class="lock icon"></i>
                             </div>
                         </div>
@@ -56,18 +56,9 @@
                             <span> Click to... </span>
                         </div>
                         <div class="xd-df">
-                            <div>
-                                <a href="./main.php">
-                                    <button class="ui inverted primary button">
-                                        <p>Back</p>
-                                    </button>
-                                </a>
-                            </div>
-                            <div>
-                                    <button class="ui inverted primary submit button">
-                                        <p>Add</p>
-                                    </button>
-                            </div>
+                            <button class="ui inverted primary submit button">
+                                Add
+                            </button>
                         </div>
                         <br>
                     </div>

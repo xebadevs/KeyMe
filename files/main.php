@@ -15,7 +15,7 @@ include_once('session.php');
                 <tr>
                     <th>Reference</th>
                     <th>User & Pass</th>
-                    <th>Edit</th>
+                    <th>Edit / Delete</th>
                 </tr>
             </thead>
             <tbody>
@@ -31,7 +31,10 @@ include_once('session.php');
                         </div>
                     </div>
                 </td>
-                <td><a href="./edit.php "><i class="edit outline icon"></i></a></td>
+                <td>
+                    <a href="./edit.php "><i class="edit outline icon"></i></a>
+                    <a href="./delete.php "><i class="trash alternate icon"></i></a>
+                </td>
             </tr>
 
             <tr>
@@ -46,7 +49,10 @@ include_once('session.php');
                         </div>
                     </div>
                 </td>
-                <td><a href="#"><i class="edit outline icon"></i></a></td>
+                <td>
+                    <a href="./edit.php "><i class="edit outline icon"></i></a>
+                    <a href="./delete.php "><i class="trash alternate icon"></i></a>
+                </td>
             </tr>
 
             <tr>
@@ -61,7 +67,10 @@ include_once('session.php');
                         </div>
                     </div>
                 </td>
-                <td><a href="#"><i class="edit outline icon"></i></a></td>
+                <td>
+                    <a href="./edit.php "><i class="edit outline icon"></i></a>
+                    <a href="./delete.php "><i class="trash alternate icon"></i></a>
+                </td>
             </tr>
             </tbody>
         </table>
@@ -70,18 +79,14 @@ include_once('session.php');
     <div class="empty"></div>
 
     <div class="options">
-        <form action="">
-            <button class="ui inverted primary button view-all">View All</button>
-        </form>
-            <a href="./add.php">
-                <button class="ui inverted primary button add">
-                    Add
-                </button>
-            </a>
-        <a href="./logout.php">
-            <button class="ui inverted primary button add">
-                Logout
-            </button>
+        <a href="./add.php" class="ui inverted primary button">
+            View All
+        </a>
+        <a href="./add.php" class="ui inverted primary button">
+            Add
+        </a>
+        <a href="./logout.php" class="ui inverted primary button">
+            Logout
         </a>
     </div>
 </body>
