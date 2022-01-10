@@ -10,11 +10,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $password = $_POST['password'];
     $repassword = $_POST['repassword'];
 
-    if(empty($password) || empty($repassword)){
+    if(empty($password) and empty($repassword)){
         $error = true;
     }elseif($password !== $repassword){
         $error = true;
-    }elseif(empty($email) || filter_var($email, FILTER_VALIDATE_EMAIL) === false){
+    }elseif(empty($email) and filter_var($email, FILTER_VALIDATE_EMAIL) === false){
         $error = true;
     }
 

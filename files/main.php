@@ -79,7 +79,7 @@ include_once('session.php');
     <div class="empty"></div>
 
     <div class="options">
-        <a href="./add.php" class="ui inverted primary button">
+        <a href="./form-viewall.php" class="ui inverted primary button">
             View All
         </a>
         <a href="./add.php" class="ui inverted primary button">

@@ -56,7 +56,7 @@
                         <span> Click to... </span>
                     </div>
                     <div class="xd-df">
-                        <form action="" method="post">
+                        <form action="form-edit.php" method="post">
                             <button class="ui inverted primary submit button">
                                 Save
                             </button>
