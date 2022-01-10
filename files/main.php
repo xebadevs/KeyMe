@@ -31,7 +31,7 @@ include_once('session.php');
                         </div>
                     </div>
                 </td>
-                <td><a href="./edit.php"><i class="edit outline icon"></i></a></td>
+                <td><a href="./edit.php "><i class="edit outline icon"></i></a></td>
             </tr>
 
             <tr>

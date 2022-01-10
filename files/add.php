@@ -29,26 +29,26 @@
     <div class="x-cont-add">
         <div class="ui column grid">
             <div class="column">
-                <form action="">
+                <form action="./form-add.php" method="post">
                     <div class="ui form">
                         <div class="field">
                             <label>Reference</label>
                             <div class="ui left icon input">
-                                <input type="text" placeholder="Insert the reference">
+                                <input type="text" placeholder="Insert the reference" name="reference">
                                 <i class="user icon"></i>
                             </div>
                         </div>
                         <div class="field">
                             <label>User</label>
                             <div class="ui left icon input">
-                                <input type="password" placeholder="Insert the user">
+                                <input type="password" placeholder="Insert the user" name="user">
                                 <i class="lock icon"></i>
                             </div>
                         </div>
                         <div class="field">
                             <label>Password</label>
                             <div class="ui left icon input">
-                                <input type="password" placeholder="Insert the password">
+                                <input type="password" placeholder="Insert the password" name="password">
                                 <i class="lock icon"></i>
                             </div>
                         </div>
@@ -57,18 +57,16 @@
                         </div>
                         <div class="xd-df">
                             <div>
-                                <form action="" method="post">
-                                    <button class="ui inverted primary submit button">
+                                <a href="./main.php">
+                                    <button class="ui inverted primary button">
                                         <p>Back</p>
                                     </button>
-                                </form>
+                                </a>
                             </div>
                             <div>
-                                <form action="" method="post">
                                     <button class="ui inverted primary submit button">
                                         <p>Add</p>
                                     </button>
-                                </form>
                             </div>
                         </div>
                         <br>
