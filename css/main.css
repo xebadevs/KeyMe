@@ -32,6 +32,7 @@ body {
 /* ------------------------- SEARCH ------------------------- */
 .ui.search {
     display: flex;
+    justify-content: center;
 }
 
 .ui.search div {

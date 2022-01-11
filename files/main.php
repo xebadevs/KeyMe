@@ -2,10 +2,7 @@
 require_once('header.php');
 include_once('session.php');
 ?>
-
-    <div>
-        <?php require_once('search.php'); ?>
-    </div>
+    <?php require_once('search.php'); ?>
 
     <div class="empty"></div>
 
