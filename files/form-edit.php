@@ -14,11 +14,11 @@
 //    $id_a = $row[1];
 
 
-//    $sql = "UPDATE db_passwords SET pass_username = '$user', pass_password = '$pass' WHERE pass_id = $id";
-//    $query = mysqli_query($connection, $sql);
+    $sql = "UPDATE db_passwords SET pass_reference = '$ref', pass_username = '$user', pass_password = '$pass' WHERE pass_id = $pass_id";
+    $query = mysqli_query($connection, $sql);
 
 
-//    header('location:./form-viewall.php');
+    header('location:./form-viewall.php');
 echo 'Reference: ' . $ref;
 echo '<br>';
 echo 'ID: ' . $pass_id;
