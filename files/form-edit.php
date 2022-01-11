@@ -1,34 +1,24 @@
 <?php
 
     require_once('session.php');
+    $connection = mysqli_connect('localhost', 'root', '', 'keyme');
 
-    $reference = '';
-    $user = '';
-    $password = '';
-    $error = NULL;
-    $email = $_SESSION['email'];
+    $ref = $_POST['reference'];
+    $user = $_POST['user'];
+    $pass = $_POST['password'];
+    $pass_id = $_POST['edit_id'];
 
-    if($_SERVER['REQUEST_METHOD'] == 'POST'){
-        $reference = $_POST['reference'];
-        $user = $_POST['user'];
-        $password = $_POST['password'];
+    $sql_a = "SELECT * FROM db_passwords WHERE pass_reference = '$ref'";
+    $resp_a = mysqli_query($connection, $sql_a);
+//    $row = mysqli_fetch_row($resp_a);
+//    $id_a = $row[1];
 
-        if(empty($reference) and empty($user) and empty($password)){
-            $error = true;
-        }
-    }
 
-    if($error === NULL){
-        $connection = mysqli_connect('localhost', 'root', '', 'keyme');
+//    $sql = "UPDATE db_passwords SET pass_username = '$user', pass_password = '$pass' WHERE pass_id = $id";
+//    $query = mysqli_query($connection, $sql);
 
-        $query_ref = "SELECT user_id FROM db_users WHERE user_email = '$email' LIMIT 1";
-        $resp_ref = mysqli_query($connection, $query_ref);
-        $data_ref = mysqli_fetch_row($resp_ref);
-        $id = $data_ref[0];
 
-        $query = "UPDATE db_passwords SET pass_reference = '$reference',pass_username = '$user',pass_password = '$password' WHERE fk_user_id = $id";
-        $response = mysqli_query($connection, $query);
-
-    }else{
-        header('location:./error-log.php');
-    }
+//    header('location:./form-viewall.php');
+echo 'Reference: ' . $ref;
+echo '<br>';
+echo 'ID: ' . $pass_id;

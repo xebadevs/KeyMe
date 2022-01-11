@@ -24,7 +24,7 @@
             $query_add = "INSERT INTO db_passwords (fk_user_id, pass_reference, pass_username, pass_password) VALUES ('$user_id', '$reference', '$user', '$password')";
             $response_add = mysqli_query($connection, $query_add);
             mysqli_close($connection);
-            header('location:./main.php');
+            header('location:./form-viewall.php');
             }
     }else{
         header('location:./error-log.php'); // INCOMPLETE QUERY

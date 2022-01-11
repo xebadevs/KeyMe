@@ -1,5 +1,18 @@
 <?php
     include_once('session.php');
+
+    $ref = $_GET['ref'];
+
+    $connection = mysqli_connect('localhost', 'root', '', 'keyme');
+
+    $query = "SELECT * FROM db_passwords WHERE pass_reference = '$ref'";
+    $response = mysqli_query($connection, $query);
+    mysqli_close($connection);
+
+    $row = mysqli_fetch_row($response);
+    $pass_id = $row[1];
+    $user = $row[3];
+    $password = $row[4];
 ?>
 
 <!doctype html>
@@ -34,21 +47,22 @@
                     <div class="field">
                         <label>Reference</label>
                         <div class="ui left icon input">
-                            <input type="text" placeholder="Insert the reference" name="reference">
+                            <input type="hidden" name="edit_id" value="<?= $pass_id ?>">
+                            <input type="text" placeholder="Insert the reference" name="reference" value=" <?= $ref ?> " required>
                             <i class="user icon"></i>
                         </div>
                     </div>
                     <div class="field">
                         <label>User</label>
                         <div class="ui left icon input">
-                            <input type="password" placeholder="Insert the user" name="user">
+                            <input type="text" placeholder="Insert the user" name="user" value=" <?= $user ?> ">
                             <i class="lock icon"></i>
                         </div>
                     </div>
                     <div class="field">
                         <label>Password</label>
                         <div class="ui left icon input">
-                            <input type="password" placeholder="Insert the password" name="password">
+                            <input type="text" placeholder="Insert the password" name="password" value=" <?= $password ?> ">
                             <i class="lock icon"></i>
                         </div>
                     </div>
