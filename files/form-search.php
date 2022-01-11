@@ -4,7 +4,7 @@
     $connection = mysqli_connect('localhost', 'root', '', 'keyme');
 
     $email = $_SESSION['email'];
-    $query_email = "SELECT user_id FROM db_users WHERE user_email = '$email' limit 1";
+    $query_email = "SELECT user_id FROM db_users WHERE user_email = '$email' LIMIT 1";
     $resp_email = mysqli_query($connection, $query_email);
     $data_id = mysqli_fetch_row($resp_email);
     $id = $data_id[0];

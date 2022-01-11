@@ -29,26 +29,26 @@
 <div class="x-cont-add">
     <div class="ui column grid">
         <div class="column">
-            <form action="">
+            <form action="./form-edit.php" method="post">
                 <div class="ui form">
                     <div class="field">
                         <label>Reference</label>
                         <div class="ui left icon input">
-                            <input type="text" placeholder="Insert the reference">
+                            <input type="text" placeholder="Insert the reference" name="reference">
                             <i class="user icon"></i>
                         </div>
                     </div>
                     <div class="field">
                         <label>User</label>
                         <div class="ui left icon input">
-                            <input type="password" placeholder="Insert the user">
+                            <input type="password" placeholder="Insert the user" name="user">
                             <i class="lock icon"></i>
                         </div>
                     </div>
                     <div class="field">
                         <label>Password</label>
                         <div class="ui left icon input">
-                            <input type="password" placeholder="Insert the password">
+                            <input type="password" placeholder="Insert the password" name="password">
                             <i class="lock icon"></i>
                         </div>
                     </div>
@@ -56,11 +56,9 @@
                         <span> Click to... </span>
                     </div>
                     <div class="xd-df">
-                        <form action="form-edit.php" method="post">
                             <button class="ui inverted primary submit button">
                                 Save
                             </button>
-                        </form>
                     </div>
                     <br>
                 </div>
