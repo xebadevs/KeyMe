@@ -13,6 +13,7 @@
 
     $query = "SELECT * FROM db_passwords WHERE fk_user_id = '$id' AND pass_reference LIKE '%$search%'";
     $response = mysqli_query($connection, $query);
+    mysqli_close($connection);
 
     require_once('header.php');
     require_once ('search.php');
