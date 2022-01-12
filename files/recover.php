@@ -23,7 +23,7 @@
 <div class="x-cont-login">
     <div class="ui column grid">
         <div class="column">
-            <form action="" method="post">
+            <form action="form-recover.php" method="post">
                 <div class="ui form">
                     <div class="field">
                         <label>Email</label>
