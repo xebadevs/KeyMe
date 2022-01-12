@@ -48,7 +48,7 @@
                         <label>Reference</label>
                         <div class="ui left icon input">
                             <input type="hidden" name="edit_id" value="<?= $pass_id ?>">
-                            <input type="text" placeholder="Insert the reference" name="reference" value=" <?= $ref ?> " required>
+                            <input type="text" placeholder="Insert the reference" name="reference" value=" <?= $ref ?> " required autofocus>
                             <i class="thumbtack icon"></i>
                         </div>
                     </div>

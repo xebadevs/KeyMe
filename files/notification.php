@@ -1,7 +1,7 @@
 <?php
     require_once('header.php');
 
-    $title = '';
+    $title = 'REFERENCE FILE';
     $not = '';
     $href = '';
     $btn = '';
@@ -12,7 +12,7 @@
     <h2 class=""> <?= $title ?> </h2>
 </div>
 
-<div class="notif content">
+<div class="notif not-content">
     <h3> <?= $not ?> </h3>
 </div>
 

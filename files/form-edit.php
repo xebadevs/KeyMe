@@ -3,9 +3,9 @@
     require_once('session.php');
     $connection = mysqli_connect('localhost', 'root', '', 'keyme');
 
-    $ref = $_POST['reference'];
-    $user = $_POST['user'];
-    $pass = $_POST['password'];
+    $ref = trim($_POST['reference']);
+    $user = trim($_POST['user']);
+    $pass = trim($_POST['password']);
     $pass_id = $_POST['edit_id'];
 
     $sql_a = "SELECT * FROM db_passwords WHERE pass_reference = '$ref'";

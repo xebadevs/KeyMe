@@ -3,9 +3,9 @@
 $error = NULL;
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $repassword = $_POST['repassword'];
+    $email = trim($_POST['email']);
+    $password = trim($_POST['password']);
+    $repassword = trim($_POST['repassword']);
 
     if(empty($password) and empty($repassword)){
         $error = true;

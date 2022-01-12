@@ -6,9 +6,9 @@
     $password = '';
 
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
-            $reference = $_POST['reference'];
-            $user = $_POST['user'];
-            $password = $_POST['password'];
+            $reference = trim($_POST['reference']);
+            $user = trim($_POST['user']);
+            $password = trim($_POST['password']);
 
         if($reference !== '' and $user !== '' and $password !== ''){
             $connection = mysqli_connect('localhost', 'root', '', 'keyme');
