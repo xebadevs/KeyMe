@@ -56,23 +56,8 @@ body {
     bottom: 30px;
 }
 
-.options button {
-    width: 150px;
-}
-
-.ui.inverted.primary.button.view-all:hover,
-.ui.inverted.primary.button.view-all:focus{
-    background-color: rgba(30, 50, 95, .6);
-}
-
-.ui.inverted.primary.button.add:hover,
-.ui.inverted.primary.button.add:focus{
-    background-color: rgba(30, 50, 95, .6);
-}
-
-.ui.inverted.primary.button.logout:hover,
-.ui.inverted.primary.button.logout:focus{
-    background-color: rgba(155, 30, 20, .5);
+.ui.inverted.primary.button {
+    width: 95px;
 }
 
 
@@ -86,7 +71,6 @@ body {
     color: whitesmoke;
     margin: auto;
 
-
     /* Glass style */
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -98,6 +82,7 @@ body {
 .ui.table tr th {
     color: whitesmoke;
     height: 50px;
+    width: 300px;
 
     /* Glass style */
     backdrop-filter: blur(16px) saturate(180%);
@@ -109,6 +94,10 @@ body {
     text-align: center;
 }
 
+a {
+    margin: auto 20px;
+}
+
 
 /* ------------------------- TABLE ALT ------------------------- */
 
@@ -116,8 +105,6 @@ body {
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.65);
-
-    width:800px;
 }
 
 .ui[class*="very basic"].table:not(.sortable):not(.striped) thead tr:first-child th {
@@ -130,51 +117,6 @@ body {
 
 .username {
     font-weight: bold;
-}
-
-/* ------------------------- ADD / EDIT ------------------------- */
-.x-cont-login {
-    width: clamp(300px, 400px, 400px);
-    margin: auto;
-
-    /* Glass style */
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.65);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-}
-
-.ui.form {
-    padding: clamp(5px, 40px, 50px);
-    margin: auto;
-}
-
-.ui.form .field>label {
-    color: whitesmoke;
-    text-align: center;
-    font-size: 1.2em;
-}
-
-.xd-df {
-    display: flex;
-    justify-content: space-around;
-}
-
-.xd-df button {
-    align-items: center;
-}
-
-.ui.submit.button {
-    margin: 50px auto 10px auto;
-}
-
-.xd-ma p {
-    display: flex;
-}
-
-.xd-ma p a {
-    margin: auto;
 }
 
 
@@ -202,6 +144,9 @@ body {
     .ui[class*="very basic"].table:not(.sortable):not(.striped) thead tr:first-child th {
         color: transparent;
         height: 0;
+    }
+    a {
+        margin: auto 7px;
     }
 }
 

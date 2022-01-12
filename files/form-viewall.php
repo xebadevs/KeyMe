@@ -31,7 +31,7 @@
         <tr>
             <th>Reference</th>
             <th>User & Pass</th>
-            <th>Edit / Delete</th>
+            <th>Edit | Delete</th>
         </tr>
         </thead>
         <tbody>
