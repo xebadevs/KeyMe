@@ -120,6 +120,40 @@ a {
 }
 
 
+/* ------------------------- NOTIFICATION ------------------------- */
+.notif {
+    display: flex;
+    height: 50px;
+    width: 350px;
+    margin: auto auto 30px auto;
+    justify-content: center;
+
+    /* Glass style */
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.65);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.content {
+    height: 150px;
+    width: 700px;
+    align-items: center;
+}
+
+.notif h1, h3 {
+    color: orangered;
+    line-height: 45px;
+}
+
+.x-margin {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+
 /* ------------------------- MEDIA QUERIES ------------------------- */
 @media screen and (max-width: 1024px) and (orientation: portrait){
     body {
