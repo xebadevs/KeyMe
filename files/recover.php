@@ -28,8 +28,8 @@
                     <div class="field">
                         <label>Email</label>
                         <div class="ui left icon input">
-                            <input type="text" placeholder="Username">
-                            <i class="user icon"></i>
+                            <input type="text" placeholder="Insert your email">
+                            <i class="envelope open outline icon"></i>
                         </div>
                     </div>
                     <div class="xd-df">
