@@ -1,10 +1,11 @@
 <?php
-    require_once('header.php');
 
-    $title = '';
-    $not = '';
-    $href = '';
-    $btn = '';
+require_once('header.php');
+
+$title = 'NOTIFICATION';
+$not = "Possible errors <br><li>The e-mail is not valid</li><li>Password and Repassword didn't match</li>" ;
+$btn = 'Try again';
+$href = './register.php';
 
 ?>
 

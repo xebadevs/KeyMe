@@ -1,3 +1,7 @@
+<?php
+    $error = 'ERROR. PLEASE TRY AGAIN';
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -42,7 +46,7 @@
                         </div>
 
                         <div class="wrong-pass">
-                                <span> ERROR. PLEASE TRY AGAIN </span>
+                                <span> <?= $error ?> </span>
                         </div>
 
                         <div class="xd-df">

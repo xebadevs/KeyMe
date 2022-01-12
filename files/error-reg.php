@@ -1,10 +1,11 @@
 <?php
-    require_once('header.php');
 
-    $title = '';
-    $not = '';
-    $href = '';
-    $btn = '';
+require_once('header.php');
+
+$title = 'NOTIFICATION';
+$not = 'This user already exists';
+$btn = 'Try another username';
+$href = './register.php';
 
 ?>
 

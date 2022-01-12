@@ -1,8 +1,5 @@
 <?php
 
-$email = '';
-$password = '';
-$repassword = '';
 $error = NULL;
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
@@ -28,12 +25,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
         if($closting > 0){
             mysqli_close($connection);
-            header('location:./error-log.php'); // EXISTING USER!!
+            header('location:./error-reg.php'); // EXISTING USER!!
         }else{
             $query = "INSERT INTO db_users (user_email, user_password) VALUES ('$email', '$password')";
             $response = mysqli_query($connection, $query);
             mysqli_close($connection);
             header('location:../index.php'); // SUCCESSFUL REGISTRATION!!
         }
+    }else{
+        header('location:./error-reg-alt.php');
     }
 }

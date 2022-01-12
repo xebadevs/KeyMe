@@ -27,5 +27,5 @@
             header('location:./form-viewall.php');
             }
     }else{
-        header('location:./error-log.php'); // INCOMPLETE QUERY
+        header('location:./error.php'); // INCOMPLETE QUERY
     }
