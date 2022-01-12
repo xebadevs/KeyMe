@@ -142,9 +142,10 @@ a {
     align-items: center;
 }
 
-.notif h1, h3 {
+.notif h2, h3 {
     color: orangered;
     line-height: 45px;
+    text-align: center;
 }
 
 .x-margin {

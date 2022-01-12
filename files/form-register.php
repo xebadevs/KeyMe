@@ -11,9 +11,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $error = true;
     }elseif($password !== $repassword){
         $error = true;
-    }elseif(empty($email) and filter_var($email, FILTER_VALIDATE_EMAIL) === false){
+    }elseif(filter_var($email, FILTER_VALIDATE_EMAIL) == false){
         $error = true;
-    }
+    }else{
+    header('location:./error-reg-alt.php');
+}
 
     if($error === NULL) {
         $connection = mysqli_connect('localhost', 'root', '', 'keyme');
