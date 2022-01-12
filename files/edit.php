@@ -49,14 +49,14 @@
                         <div class="ui left icon input">
                             <input type="hidden" name="edit_id" value="<?= $pass_id ?>">
                             <input type="text" placeholder="Insert the reference" name="reference" value=" <?= $ref ?> " required>
-                            <i class="user icon"></i>
+                            <i class="thumbtack icon"></i>
                         </div>
                     </div>
                     <div class="field">
                         <label>User</label>
                         <div class="ui left icon input">
                             <input type="text" placeholder="Insert the user" name="user" value=" <?= $user ?> ">
-                            <i class="lock icon"></i>
+                            <i class="user icon"></i>
                         </div>
                     </div>
                     <div class="field">

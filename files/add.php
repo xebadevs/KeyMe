@@ -35,20 +35,20 @@
                             <label>Reference</label>
                             <div class="ui left icon input">
                                 <input type="text" placeholder="Insert the reference" name="reference" required>
-                                <i class="user icon"></i>
+                                <i class="thumbtack icon"></i>
                             </div>
                         </div>
                         <div class="field">
                             <label>User</label>
                             <div class="ui left icon input">
-                                <input type="password" placeholder="Insert the user" name="user" required>
-                                <i class="lock icon"></i>
+                                <input type="text" placeholder="Insert the user" name="user" required>
+                                <i class="user icon"></i>
                             </div>
                         </div>
                         <div class="field">
                             <label>Password</label>
                             <div class="ui left icon input">
-                                <input type="password" placeholder="Insert the password" name="password" required>
+                                <input type="text" placeholder="Insert the password" name="password" required>
                                 <i class="lock icon"></i>
                             </div>
                         </div>
