@@ -3,9 +3,9 @@
 require_once('header.php');
 
 $title = 'NOTIFICATION';
-$not = 'This user already exists';
-$btn = 'Try another username';
-$href = './register.php';
+$not = "This user does not exist in our Data Base";
+$btn = 'Go Back';
+$href = './recover.php';
 
 ?>
 

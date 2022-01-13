@@ -6,16 +6,12 @@
     require 'PHPMailer/PHPMailer.php';
     require 'PHPMailer/SMTP.php';
 
-    $email = '';
-    $error = NULL;
+    $email = trim($_POST['email']);
 
-    if($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $email = trim($_POST['email']);
 
-        if (filter_var($email, FILTER_VALIDATE_EMAIL) == false) {
-            header('location:./error.php'); // INVALID E-MAIL
-        }
+    if($_SERVER['REQUEST_METHOD'] == 'POST' and filter_var($email, FILTER_VALIDATE_EMAIL)){
 
+        header('location:./main.php'); // INVALID E-MAIL
         $connection = mysqli_connect('localhost', 'root', '', 'keyme');
         $query = "SELECT user_password FROM db_users WHERE user_email = '$email' LIMIT 1";
         $response = mysqli_query($connection, $query);
@@ -23,8 +19,9 @@
         $row = mysqli_fetch_row($response);
         $password = $row[0];
 
+
         if ($password == NULL) {
-            header('location:./error.php'); // USER DIDN'T EXISTS IN DDBB
+            header('location:./error-user.php'); // USER DIDN'T EXISTS IN DDBB
         } else {
             $mail = new PHPMailer(true);
 
@@ -56,4 +53,6 @@
                 echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
             }
         }
-    }
+    }else{
+    header('location:./error-mail.php'); // INVALID E-MAIL
+}
