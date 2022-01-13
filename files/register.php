@@ -34,7 +34,7 @@
                     <div class="field">
                         <label>Email</label>
                         <div class="ui left icon input">
-                            <input type="text" placeholder="Username" name="email" required>
+                            <input type="text" placeholder="Username" name="email" required autofocus>
                             <i class="user icon"></i>
                         </div>
                     </div>

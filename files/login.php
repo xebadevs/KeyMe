@@ -6,7 +6,7 @@
                     <div class="field">
                         <label>Email</label>
                         <div class="ui left icon input">
-                            <input type="text" name="email" placeholder="Insert your email" required>
+                            <input type="text" name="email" placeholder="Insert your email" required autofocus>
                             <i class="envelope open outline icon"></i>
                         </div>
                     </div>
