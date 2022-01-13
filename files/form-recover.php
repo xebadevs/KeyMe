@@ -9,41 +9,51 @@
     $email = '';
     $error = NULL;
 
-    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $email = trim($_POST['email']);
 
-        if(empty($email) and filter_var($email, FILTER_VALIDATE_EMAIL) == false){
-            $error = true;
+        if (filter_var($email, FILTER_VALIDATE_EMAIL) == false) {
+            header('location:./error.php'); // INVALID E-MAIL
         }
-    }
 
-    if($error === NULL){
-        $mail = new PHPMailer(true);
+        $connection = mysqli_connect('localhost', 'root', '', 'keyme');
+        $query = "SELECT user_password FROM db_users WHERE user_email = '$email' LIMIT 1";
+        $response = mysqli_query($connection, $query);
 
-        try {
-            //Server settings
-            $mail->SMTPDebug = 2;
-            $mail->isSMTP();
-            $mail->Host       = 'smtp.gmail.com';
-            $mail->SMTPAuth   = true;
-            $mail->Username   = 'agitelfo@gmail.com';
-            $mail->Password   = 'SurrenderToW4t3r';
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-            $mail->Port       = 465;
+        $row = mysqli_fetch_row($response);
+        $password = $row[0];
 
-            //Recipients
-            $mail->setFrom('agitelfo@gmail.com', 'KeyMe: Recovering Mail');
-            $mail->addAddress($email, 'KeyMe');
+        if ($password == NULL) {
+            header('location:./error.php'); // USER DIDN'T EXISTS IN DDBB
+        } else {
+            $mail = new PHPMailer(true);
 
-            //Content
-            $mail->isHTML(true);
-            $mail->Subject = 'Test message';
-            $mail->Body    = 'This is the HTML message body <b>in bold!</b><br>Click here to confirm your register: <a href="https://es.wikipedia.org/wiki/Yasunori_Mitsuda"> CONFIRMATION LINK</a>';
-            // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+            try {
+                //Server settings
+                $mail->SMTPDebug = 2;
+                $mail->isSMTP();
+                $mail->Host = 'smtp.gmail.com';
+                $mail->SMTPAuth = true;
+                $mail->Username = 'agitelfo@gmail.com';
+                $mail->Password = 'SurrenderToW4t3r';
+                $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+                $mail->Port = 465;
 
-            $mail->send();
-            echo 'Message has been sent';
-        } catch (Exception $e) {
-            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+                //Recipients
+                $mail->setFrom('agitelfo@gmail.com', 'KeyMe: Recovering Mail');
+                $mail->addAddress($email, 'KeyMe');
+
+                //Content
+                $mail->isHTML(true);
+                $mail->Subject = 'Test message';
+                $mail->Body = "<p>You have required your <b>Master Password</b>, wich is:</p> <h3 style='color:red;'>$password</style></h3><p>Please save it in a highly secure place. Now you can access from:</p><p>http://localhost/projects/portfolio/keyme/KeyMe/index.php</p>";
+                 $mail->AltBody = "You have required your Master Password, wich is: [$password]. Please save it in a highly secure place. Now you can access from: http://localhost/projects/portfolio/keyme/KeyMe/index.php";
+
+                $mail->send();
+                echo 'Message has been sent';
+                header('location:./main.php');
+            } catch (Exception $e) {
+                echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            }
         }
     }

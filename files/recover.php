@@ -34,7 +34,7 @@
                     </div>
                     <div class="xd-df">
                         <button class="ui inverted primary submit button">
-                            <p>SEND NEW PASSWORD</p>
+                            <p>SEND MY PASSWORD</p>
                         </button>
                     </div>
                     <br>
