@@ -28,7 +28,7 @@
                     <div class="field">
                         <label>Email</label>
                         <div class="ui left icon input">
-                            <input type="text" placeholder="Insert your email">
+                            <input type="text" placeholder="Insert your email" name="email" required>
                             <i class="envelope open outline icon"></i>
                         </div>
                     </div>
