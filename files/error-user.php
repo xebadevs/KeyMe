@@ -9,6 +9,14 @@ $href = './recover.php';
 
 ?>
 
+<head>
+    <style>
+        body {
+            background: url("../img/bgindex.jpg") no-repeat;
+        }
+    </style>
+</head>
+
 <div class="notif">
     <h2 class=""> <?= $title ?> </h2>
 </div>
