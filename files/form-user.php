@@ -24,4 +24,3 @@
         mysqli_close($connection);
         header('location:./logout.php'); // FOR CHECK
     }
-

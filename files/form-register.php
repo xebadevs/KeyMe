@@ -9,7 +9,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
     if(empty($password) and empty($repassword)){
         $error = true;
-    }elseif($password !== $repassword){
+    }elseif($password !== $repassword) {
+        $error = true;
+    }elseif(strlen($password) < 6){
         $error = true;
     }elseif(filter_var($email, FILTER_VALIDATE_EMAIL) == false){
         $error = true;
@@ -34,7 +36,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
             $query = "INSERT INTO db_users (user_email, user_password) VALUES ('$email', '$encrypt_password')";
             $response = mysqli_query($connection, $query);
             mysqli_close($connection);
-            header('location:../index.php'); // SUCCESSFUL REGISTRATION!!
+            header('location:../files/succ-reg.php'); // SUCCESSFUL REGISTRATION!!
         }
     }else{
         header('location:./error-reg-alt.php');
