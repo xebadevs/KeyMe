@@ -1,8 +1,8 @@
 <?php
 require_once('header.php');
 include_once('session.php');
+require_once('search.php');
 ?>
-    <?php require_once('search.php'); ?>
 
     <div class="empty"></div>
 
