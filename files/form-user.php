@@ -13,7 +13,7 @@
 
     if(empty($user) or empty($password) or !filter_var($user, FILTER_VALIDATE_EMAIL)){
     $error = true;
-    echo 'Wrong data';
+    header('location:./error-edituser.php');
     }else{
         $encrypt_password = password_hash($password, PASSWORD_BCRYPT);
 

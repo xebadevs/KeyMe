@@ -48,21 +48,21 @@
                         <label>Reference</label>
                         <div class="ui left icon input">
                             <input type="hidden" name="edit_id" value="<?= $pass_id ?>">
-                            <input type="text" placeholder="Insert the reference" name="reference" value=" <?= $ref ?> " required autofocus>
+                            <input type="text" placeholder="Insert the reference" name="reference" value="<?= $ref ?>" required autofocus>
                             <i class="thumbtack icon"></i>
                         </div>
                     </div>
                     <div class="field">
                         <label>User</label>
                         <div class="ui left icon input">
-                            <input type="text" placeholder="Insert the user" name="user" value=" <?= $user ?> ">
+                            <input type="text" placeholder="Insert the user" name="user" value="<?= $user ?>" required>
                             <i class="user icon"></i>
                         </div>
                     </div>
                     <div class="field">
                         <label>Password</label>
                         <div class="ui left icon input">
-                            <input type="text" placeholder="Insert the password" name="password" value=" <?= $password ?> ">
+                            <input type="text" placeholder="Insert the password" name="password" value="<?= $password ?>" required>
                             <i class="lock open icon"></i>
                         </div>
                     </div>
