@@ -8,10 +8,7 @@
 
     $email = trim($_POST['email']);
 
-
     if($_SERVER['REQUEST_METHOD'] == 'POST' and filter_var($email, FILTER_VALIDATE_EMAIL)){
-
-        header('location:./main.php'); // INVALID E-MAIL
         $connection = mysqli_connect('localhost', 'root', '', 'keyme');
         $query = "SELECT user_password FROM db_users WHERE user_email = '$email' LIMIT 1";
         $response = mysqli_query($connection, $query);
@@ -23,6 +20,12 @@
         if ($password == NULL) {
             header('location:./error-user.php'); // USER DIDN'T EXISTS IN DDBB
         } else {
+
+            //        NEW IMPLEMENTATION
+            $values = 'zxcvbnmasdfghjklqewrtyuiop0123456789';
+            $random_value = substr(str_shuffle($values), 0, 15);
+            $random_hash = password_hash($random_value, PASSWORD_BCRYPT);
+
             $mail = new PHPMailer(true);
 
             try {
