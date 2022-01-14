@@ -3,19 +3,11 @@
 require_once('header.php');
 
 $title = 'NOTIFICATION';
-$not = "This user does not exist in our Data Base";
-$btn = 'Go Back';
-$href = './recover.php';
+$not = "Possible errors <br><li>The user field requires an e-mail format</li><li>Password field does not allow special characters</li>" ;
+$btn = 'Try again';
+$href = './register.php';
 
 ?>
-
-<head>
-    <style>
-        body {
-            background: url("../img/bgindex.jpg") no-repeat;
-        }
-    </style>
-</head>
 
 <div class="notif">
     <h2 class=""> <?= $title ?> </h2>

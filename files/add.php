@@ -49,7 +49,7 @@
                             <label>Password</label>
                             <div class="ui left icon input">
                                 <input type="text" placeholder="Insert the password" name="password" required>
-                                <i class="lock icon"></i>
+                                <i class="lock open icon"></i>
                             </div>
                         </div>
                         <div class="cont-span">

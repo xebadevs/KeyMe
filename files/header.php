@@ -13,9 +13,9 @@
 
 <body>
 <div class="middle-empty"></div>
-<div class="ui center aligned header">
+<div class="cont-icon">
     <a href="./user.php">
-        <i class="id address book icon"></i>
+        <i class="user circle outline icon"></i>
     </a>
 </div>
 <div class="middle-empty"></div>

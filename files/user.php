@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <div class="cont-span">
-                        <span> Click to... </span>
+                        <span> Change my user account </span>
                     </div>
                     <div class="xd-df">
                         <button class="ui inverted primary submit button">

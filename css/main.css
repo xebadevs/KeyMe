@@ -25,7 +25,7 @@ body {
 
 /* Empty div*/
 .middle-empty {
-    height: 2%;
+    height: 3%;
 }
 
 .empty {
@@ -33,10 +33,14 @@ body {
 }
 
 /* User icon*/
-i.icon.address.book:before {
+i.icon.user.circle.outline:before {
     color: lightskyblue;
 }
 
+.cont-icon {
+    display: flex;
+    justify-content: center;
+}
 
 /* ------------------------- SEARCH ------------------------- */
 .ui.search {
@@ -191,6 +195,12 @@ a {
     }
     a {
         margin: auto 7px;
+    }
+    .not-content {
+        width: 400px;
+    }
+    .not-content li {
+        font-size: 12px;
     }
 }
 
