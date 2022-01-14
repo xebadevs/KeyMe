@@ -7,17 +7,15 @@ require_once('session.php');
 
 
 
-$connection = mysqli_connect('localhost', 'root', '', 'keyme');
 
-$email = $_SERVER['REQUEST_METHOD'];
+$email = $_SESSION['email'];
 $user = trim($_POST['user']);
 $password = trim($_POST['password']);
 $encrypt_password = password_hash($password, PASSWORD_BCRYPT);
 
-$sql_a = "SELECT * FROM db_users WHERE pass_reference = '$email'";
-$resp_a = mysqli_query($connection, $sql_a);
+$connection = mysqli_connect('localhost', 'root', '', 'keyme');
+$query = "UPDATE db_users SET user_email = '$user', user_password = '$encrypt_password' WHERE user_email = '$email'";
+$response = mysqli_query($connection, $query);
 
-$sql = "UPDATE db_users SET user_email = '$user', user_password = '$encrypt_password' WHERE user_email = '$email'";
-$query = mysqli_query($connection, $sql);
-
+mysqli_close($connection);
 header('location:./main.php'); // FOR CHECK
