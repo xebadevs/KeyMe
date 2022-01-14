@@ -30,6 +30,7 @@
             $connection = mysqli_connect('localhost', 'root', '', 'keyme');
             $query_hash = "UPDATE db_users SET user_password = '$random_hash' WHERE user_email = '$email'";
             $res_hash = mysqli_query($connection, $query_hash);
+            mysqli_close($connection);
 
             // PHPMAILER
             $mail = new PHPMailer(true);
@@ -52,7 +53,7 @@
                 //Content
                 $mail->isHTML(true);
                 $mail->Subject = 'Test message';
-                $mail->Body = "<p>You have required your <b>Master Password</b>, wich is:</p> <h3 style='color:red;'>$random_password</style></h3><p>Please save it in a highly secure place. Now you can access from:</p><p>http://localhost/projects/portfolio/keyme/KeyMe/index.php</p>";
+                $mail->Body = "<p>You have required your <b>Master Password</b>, wich is:</p> <h3 style='color:red;'>$random_password</style></h3><p>Please save it in a highly secure place. Now you can access from:</p><a href='http://localhost/projects/portfolio/keyme/KeyMe/index.php'>KeyMe WebSite</a>";
                  $mail->AltBody = "You have required your Master Password, wich is: [$random_password]. Please save it in a highly secure place. Now you can access from: http://localhost/projects/portfolio/keyme/KeyMe/index.php";
 
                 $mail->send();
