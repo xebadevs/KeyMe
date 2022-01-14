@@ -24,8 +24,17 @@ body {
 }
 
 /* Empty div*/
+.middle-empty {
+    height: 2%;
+}
+
 .empty {
     height: 8%;
+}
+
+/* User icon*/
+i.icon.address.book:before {
+    color: lightskyblue;
 }
 
 

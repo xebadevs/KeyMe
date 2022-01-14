@@ -12,7 +12,14 @@
 </head>
 
 <body>
-<div class="empty"></div>
+<div class="middle-empty"></div>
+<div class="ui center aligned header">
+    <a href="./user.php">
+        <i class="id address book icon"></i>
+    </a>
+</div>
+<div class="middle-empty"></div>
+
 <div class="ui grid xd-mt">
     <div class="x-cont-header">
         <h1 class="ui center aligned header xd">
