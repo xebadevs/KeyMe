@@ -29,7 +29,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
             mysqli_close($connection);
             header('location:./error-reg.php'); // EXISTING USER!!
         }else{
-            $query = "INSERT INTO db_users (user_email, user_password) VALUES ('$email', '$password')";
+            $encrypt_password = password_hash($password, PASSWORD_BCRYPT);
+
+            $query = "INSERT INTO db_users (user_email, user_password) VALUES ('$email', '$encrypt_password')";
             $response = mysqli_query($connection, $query);
             mysqli_close($connection);
             header('location:../index.php'); // SUCCESSFUL REGISTRATION!!
