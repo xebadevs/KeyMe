@@ -22,7 +22,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
-h3 {
+h3, h5 {
     color: whitesmoke;
     text-align: center;
     line-height: 25px;
@@ -59,6 +59,7 @@ h3 {
 
 .xd-df {
     display: flex;
+    justify-content: center;
 }
 
 .xd-df button {
@@ -83,6 +84,17 @@ h3 {
     font-weight: bold;
     color: red;
     margin-top: 25px;
+}
+
+
+/* ------------------------- REGISTER ERROR ------------------------- */
+
+.error {
+    color: orangered;
+}
+
+.success {
+    color: lightgreen;
 }
 
 

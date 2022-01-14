@@ -41,14 +41,14 @@
                     <div class="field">
                         <label>Password</label>
                         <div class="ui left icon input">
-                            <input type="password" placeholder="Create your Master Password" name="password" required>
+                            <input type="password" placeholder="Create your Master Password" name="password" maxlength="40" required>
                             <i class="lock icon"></i>
                         </div>
                     </div>
                     <div class="field">
                         <label>Re Password</label>
                         <div class="ui left icon input">
-                            <input type="password" placeholder="Repeat your Master Password" name="repassword" required>
+                            <input type="password" placeholder="Repeat your Master Password" name="repassword" maxlength="40" required>
                             <i class="lock icon"></i>
                         </div>
                     </div>

@@ -14,7 +14,7 @@
             ($user !== '' and strlen($user) < 41) and
             ($password !== '' and strlen($password) < 41)){
                 $connection = mysqli_connect('localhost', 'root', '', 'keyme');
-                $real_reference = mysqli_real_escape_string($connection, $reference);
+        $real_reference = mysqli_real_escape_string($connection, $reference);
                 $email = $_SESSION['email'];
                 $query = "SELECT user_id FROM db_users WHERE user_email = '$email' LIMIT 1";
                 $response = mysqli_query($connection, $query);

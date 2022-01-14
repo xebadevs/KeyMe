@@ -34,21 +34,21 @@
                         <div class="field">
                             <label>Reference</label>
                             <div class="ui left icon input">
-                                <input type="text" placeholder="Insert the reference" name="reference" required>
+                                <input type="text" placeholder="Insert the reference" name="reference" maxlength="40" required>
                                 <i class="thumbtack icon"></i>
                             </div>
                         </div>
                         <div class="field">
                             <label>User</label>
                             <div class="ui left icon input">
-                                <input type="text" placeholder="Insert the user" name="user" required>
+                                <input type="text" placeholder="Insert the user" name="user" maxlength="40" required>
                                 <i class="user icon"></i>
                             </div>
                         </div>
                         <div class="field">
                             <label>Password</label>
                             <div class="ui left icon input">
-                                <input type="text" placeholder="Insert the password" name="password" required>
+                                <input type="text" placeholder="Insert the password" name="password" maxlength="40" required>
                                 <i class="lock open icon"></i>
                             </div>
                         </div>
