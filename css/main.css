@@ -215,6 +215,9 @@ a {
     .options button {
         width: 95px;
     }
+    .not-content {
+        width: 350px;
+    }
 }
 
 @media screen and (max-width: 320px) and (orientation: portrait){
@@ -224,6 +227,9 @@ a {
     .cont-table {
         height: 40%;
         overflow: auto;
+    }
+    .not-content {
+        width: 315px;
     }
 }
 
@@ -243,5 +249,8 @@ a {
     .cont-table {
         height: 40%;
         overflow: auto;
+    }
+    .not-content {
+        width: 275px;
     }
 }

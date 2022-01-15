@@ -27,7 +27,7 @@
                 <h5>Your email is correct?</h5>
                 <h5>We can't found it in our Data Base</h5>
                 <div class="xd-df">
-                    <a href="./recover.php" class="ui inverted primary submit button">
+                    <a href="./recover.php" class="ui inverted red submit button">
                         TRY AGAIN
                     </a>
                 </div>

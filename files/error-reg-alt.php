@@ -24,11 +24,11 @@
             <div class="column">
                     <div class="ui form">
                             <h3 class="error">ERROR</h3>
-                            <h5>Your email is correct? Maybe already exists</h5>
+                            <h5>Your email is correct?</h5>
                             <h5>Do your passwords match?</h5>
                             <h5>Special characters are not allowed</h5>
                         <div class="xd-df">
-                            <a href="./register.php" class="ui inverted primary submit button">
+                            <a href="./register.php" class="ui inverted red submit button">
                                 TRY AGAIN
                             </a>
                         </div>
