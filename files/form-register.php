@@ -1,5 +1,6 @@
 <?php
 
+$s_chars='/[!#$%^&*()\-=+{};:,<>]/';
 $error = NULL;
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
@@ -18,6 +19,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     }else{
     header('location:./error-reg-alt.php');
 }
+
+    $email_schar = preg_match_all($s_chars, $email);
+    $password_schar = preg_match_all($s_chars, $password);
+
+    if($email_schar > 0 or $password_schar > 0){
+        $error = true;
+    }
 
     if($error === NULL) {
         $connection = mysqli_connect('localhost', 'root', '', 'keyme');
