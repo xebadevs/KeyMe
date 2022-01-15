@@ -1,7 +1,9 @@
+/* ------------------------- BODY ------------------------- */
 body {
     background: url("../img/bgmain.jpg") no-repeat;
     background-size: auto;
 }
+
 
 /* ------------------------- HEADER ------------------------- */
 .ui.center.aligned.header.xd {
@@ -42,6 +44,7 @@ i.icon.user.circle.outline:before {
     justify-content: center;
 }
 
+
 /* ------------------------- SEARCH ------------------------- */
 .ui.search {
     display: flex;
@@ -73,6 +76,10 @@ i.icon.user.circle.outline:before {
     width: 95px;
 }
 
+.ui.inverted.primary.button.logout:focus {
+    background-color: red;
+    color: whitesmoke;
+}
 
 /* ------------------------- TABLES ------------------------- */
 .cont-table {
@@ -133,41 +140,6 @@ a {
 }
 
 
-/* ------------------------- NOTIFICATION ------------------------- */
-.notif {
-    display: flex;
-    height: 50px;
-    width: 350px;
-    margin: auto auto 30px auto;
-    justify-content: center;
-
-    /* Glass style */
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.65);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-}
-
-.not-content {
-    height: 150px;
-    width: 700px;
-    align-items: center;
-}
-
-.notif h2, h3 {
-    color: orangered;
-    line-height: 45px;
-    text-align: center;
-}
-
-.x-margin {
-    display: flex;
-    margin: auto;
-    justify-content: center;
-}
-
-
 /* ------------------------- MEDIA QUERIES ------------------------- */
 @media screen and (max-width: 1024px) and (orientation: portrait){
     body {
@@ -196,12 +168,6 @@ a {
     a {
         margin: auto 7px;
     }
-    .not-content {
-        width: 400px;
-    }
-    .not-content li {
-        font-size: 12px;
-    }
 }
 
 @media screen and (max-width: 540px) and (orientation: portrait){
@@ -215,9 +181,6 @@ a {
     .options button {
         width: 95px;
     }
-    .not-content {
-        width: 350px;
-    }
 }
 
 @media screen and (max-width: 320px) and (orientation: portrait){
@@ -227,9 +190,6 @@ a {
     .cont-table {
         height: 40%;
         overflow: auto;
-    }
-    .not-content {
-        width: 315px;
     }
 }
 
@@ -249,8 +209,5 @@ a {
     .cont-table {
         height: 40%;
         overflow: auto;
-    }
-    .not-content {
-        width: 275px;
     }
 }
