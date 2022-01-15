@@ -15,7 +15,7 @@ require_once('search.php');
         <a href="./add.php" class="ui inverted primary button">
             Add
         </a>
-        <a href="./logout.php" class="ui inverted primary button">
+        <a href="./logout.php" class="ui inverted primary button logout">
             Logout
         </a>
     </div>
