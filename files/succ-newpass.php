@@ -23,12 +23,12 @@
     <div class="ui column grid">
         <div class="column">
             <div class="ui form">
-                <h3 class="error">ERROR</h3>
-                <h5>Your email is correct?</h5>
-                <h5>Please check the format</h5>
+                <h3 class="success">SUCCESS REQUEST!</h3>
+                <h5>A new password has been send</h5>
+                <h5>Check your email and login!</h5>
                 <div class="xd-df">
-                    <a href="./recover.php" class="ui inverted red submit button">
-                        TRY AGAIN
+                    <a href="../index.php" class="ui inverted primary submit button">
+                        >>
                     </a>
                 </div>
             </div>
