@@ -1,6 +1,11 @@
 <?php
     require_once('session.php');
 
+    function removeSpecialChar($str){
+        $res = str_ireplace( array( '\'' , '"' , ',' , ';' , '<' , '>' ), ' ', $str);
+        return $res;
+    }
+
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
             $reference = trim($_POST['reference']);
             $user = trim($_POST['user']);
@@ -11,7 +16,7 @@
             ($password !== '' and strlen($password) < 41)){
                 $connection = mysqli_connect('localhost', 'root', '', 'keyme');
             // REFERENCE INCLUDES ' AND "
-            $real_reference = mysqli_real_escape_string($connection, $reference);
+            $real_reference = removeSpecialChar($reference);
             $email = $_SESSION['email'];
             $query = "SELECT user_id FROM db_users WHERE user_email = '$email' LIMIT 1";
             $response = mysqli_query($connection, $query);

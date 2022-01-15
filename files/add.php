@@ -34,7 +34,7 @@
                         <div class="field">
                             <label>Reference</label>
                             <div class="ui left icon input">
-                                <input type="text" placeholder="Insert the reference" name="reference" maxlength="40" required>
+                                <input type="text" placeholder="Insert the reference" name="reference" maxlength="40" required autofocus>
                                 <i class="thumbtack icon"></i>
                             </div>
                         </div>
