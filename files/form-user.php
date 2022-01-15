@@ -1,6 +1,7 @@
 <?php
 
     require_once('session.php');
+    $s_chars='/[!#$%^&*()\-=+{};:,<>]/';
 
     $email = $_SESSION['email'];
     $error = NULL;
@@ -11,10 +12,14 @@
         $password = trim($_POST['password']);
     }
 
+    $user_schar = preg_match_all($s_chars, $user);
+    $password_schar = preg_match_all($s_chars, $password);
+
     if(empty($user) or empty($password) or !filter_var($user, FILTER_VALIDATE_EMAIL)){
-    $error = true;
-    header('location:./error-edituser.php');
-    }else{
+        header('location:./error-edituser.php');
+    }elseif($user_schar > 0 or $password_schar > 0){
+        header('location:./error-edituser.php');
+    }else {
         $encrypt_password = password_hash($password, PASSWORD_BCRYPT);
 
         $connection = mysqli_connect('localhost', 'root', '', 'keyme');
