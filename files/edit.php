@@ -10,9 +10,15 @@
     mysqli_close($connection);
 
     $row = mysqli_fetch_row($response);
-    $pass_id = $row[1];
+    $reference = $row[1];
     $user = $row[3];
     $password = $row[4];
+
+    // OPENSSL DATA
+    $ciphering = 'AES-128-CTR';
+    $decryption_key = 'closting';
+    $options = 0;
+    $decryption_iv = '1234567891011121';
 ?>
 
 <!doctype html>
@@ -47,7 +53,7 @@
                     <div class="field">
                         <label>Reference</label>
                         <div class="ui left icon input">
-                            <input type="hidden" name="edit_id" value="<?= $pass_id ?>">
+                            <input type="hidden" name="edit_id" value="<?= $reference ?>">
                             <input type="text" placeholder="Insert the reference" name="reference" value="<?= $ref ?>" required autofocus>
                             <i class="thumbtack icon"></i>
                         </div>
@@ -62,7 +68,10 @@
                     <div class="field">
                         <label>Password</label>
                         <div class="ui left icon input">
-                            <input type="text" placeholder="Insert the password" name="password" value="<?= $password ?>" required>
+                            <input type="text" placeholder="Insert the password" name="password" value="<?php
+                                $pass_decrypt = openssl_decrypt($password, $ciphering, $decryption_key, $options, $decryption_iv);
+                                echo $pass_decrypt;
+                            ?>" required>
                             <i class="lock open icon"></i>
                         </div>
                     </div>

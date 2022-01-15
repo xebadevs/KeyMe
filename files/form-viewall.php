@@ -17,6 +17,11 @@
     $response = mysqli_query($connection, $query);
     mysqli_close($connection);
 
+$ciphering = 'AES-128-CTR';
+$decryption_key = 'closting';
+$options = 0;
+$decryption_iv = '1234567891011121';
+
 ?>
 
 <div>
@@ -39,13 +44,18 @@
                 while($res=mysqli_fetch_assoc($response)){ ?>
                 <tr>
                     <td>
-                        <p> <?= $res['pass_reference'] ?> </p>
+                        <p> <?=$res['pass_reference']?> </p>
                     </td>
                     <td>
                         <div class="content">
-                            <p class="username"> <?= $res['pass_username'] ?> </p>
+                            <p class="username"> <?=$res['pass_username']?> </p>
                             <div class="sub header">
-                                <p> <?= $res['pass_password'] ?> </p>
+                                <p>
+                                    <?php
+                                        $pass_decrypt = openssl_decrypt($res['pass_password'], $ciphering, $decryption_key, $options, $decryption_iv);
+                                        echo $pass_decrypt;
+                                    ?>
+                                </p>
                             </div>
                         </div>
                     </td>

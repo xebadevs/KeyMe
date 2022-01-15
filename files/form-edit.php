@@ -3,7 +3,7 @@
     require_once('session.php');
     $connection = mysqli_connect('localhost', 'root', '', 'keyme');
 
-    $ref = trim($_POST['reference']);
+    $ref = mysqli_real_escape_string($connection, trim($_POST['reference']));
     $user = trim($_POST['user']);
     $pass = trim($_POST['password']);
     $pass_id = $_POST['edit_id'];
