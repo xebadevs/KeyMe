@@ -7,20 +7,17 @@
     }
 
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
-            $reference = trim($_POST['reference']);
-            $user = trim($_POST['user']);
+            $reference = removeSpecialChar(trim($_POST['reference']));
+            $user = removeSpecialChar(trim($_POST['user']));
             $password = trim($_POST['password']);
 
         if(($reference !== '' and strlen($reference) < 41) and
             ($user !== '' and strlen($user) < 41) and
-            ($password !== '' and strlen($password) < 41)){
+            ($password !== '' and (strlen($password) < 41) and !removeSpecialChar($password))){
                 $connection = mysqli_connect('localhost', 'root', '', 'keyme');
-            // REFERENCE INCLUDES ' AND "
-            $real_reference = removeSpecialChar($reference);
             $email = $_SESSION['email'];
             $query = "SELECT user_id FROM db_users WHERE user_email = '$email' LIMIT 1";
             $response = mysqli_query($connection, $query);
-
             $row = mysqli_fetch_row($response);
             $user_id = $row[0];
 
@@ -32,7 +29,7 @@
             $encryption_key = 'closting';
             $pass_encrypt = openssl_encrypt($password, $ciphering, $encryption_key, $options, $encryption_iv);
 
-            $query_add = "INSERT INTO db_passwords (fk_user_id, pass_reference, pass_username, pass_password) VALUES ('$user_id', '$real_reference', '$user', '$pass_encrypt')";
+            $query_add = "INSERT INTO db_passwords (fk_user_id, pass_reference, pass_username, pass_password) VALUES ('$user_id', '$reference', '$user', '$pass_encrypt')";
             $response_add = mysqli_query($connection, $query_add);
             mysqli_close($connection);
             header('location:./form-viewall.php');

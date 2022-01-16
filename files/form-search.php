@@ -1,6 +1,9 @@
 <?php
 
     require_once('session.php');
+    require_once('header.php');
+    require_once ('search.php');
+
     $connection = mysqli_connect('localhost', 'root', '', 'keyme');
 
     $email = $_SESSION['email'];
@@ -14,9 +17,11 @@
     $query = "SELECT * FROM db_passwords WHERE fk_user_id = '$id' AND pass_reference LIKE '%$search%'";
     $response = mysqli_query($connection, $query);
     mysqli_close($connection);
-
-    require_once('header.php');
-    require_once ('search.php');
+    
+    $ciphering = 'AES-128-CTR';
+    $decryption_key = 'closting';
+    $options = 0;
+    $decryption_iv = '1234567891011121';
 ?>
 
 <div class="empty"></div>
@@ -41,7 +46,12 @@
                     <div class="content">
                         <p class="username"> <?= $res['pass_username'] ?> </p>
                         <div class="sub header">
-                            <p> <?= $res['pass_password'] ?> </p>
+                            <p>
+                                <?php
+                                $pass_decrypt = openssl_decrypt($res['pass_password'], $ciphering, $decryption_key, $options, $decryption_iv);
+                                echo $pass_decrypt;
+                                ?>
+                            </p>
                         </div>
                     </div>
                 </td>
