@@ -24,9 +24,6 @@
 <div>
     <i class="address card outline icon"></i>
     <i class="shield alternate icon"></i>
-<!--    <i class="user secret icon"></i>-->
-<!--    <i class="key icon"></i>-->
-<!--    <i class="edit outline icon"></i>-->
     <i class="save outline icon"></i>
     <i class="keyboard outline icon"></i>
 </div>
