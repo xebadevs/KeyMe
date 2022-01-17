@@ -2,7 +2,8 @@
     require_once('header.php');
     include_once('session.php');
 
-    $connection = mysqli_connect('localhost', 'root', '', 'keyme');
+    require_once('connection.php');
+    global $connection;
 
     $email = $_SESSION['email'];
     $query_id = "SELECT user_id FROM db_users WHERE user_email = '$email' LIMIT 1";

@@ -5,7 +5,8 @@
         $password = trim($_POST['password']);
 
         if (!empty($email) and !empty($password) and filter_var($email, FILTER_VALIDATE_EMAIL)){
-            $connection = mysqli_connect('localhost', 'root', '', 'keyme');
+            require_once('connection.php');
+            global $connection;
 
             $query_hash = "SELECT user_password FROM db_users WHERE user_email = '$email'";
             $response_hash = mysqli_query($connection, $query_hash);

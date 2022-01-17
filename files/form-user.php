@@ -22,7 +22,8 @@
     }else {
         $encrypt_password = password_hash($password, PASSWORD_BCRYPT);
 
-        $connection = mysqli_connect('localhost', 'root', '', 'keyme');
+        require_once('connection.php');
+        global $connection;
         $query = "UPDATE db_users SET user_email = '$user', user_password = '$encrypt_password' WHERE user_email = '$email'";
         $response = mysqli_query($connection, $query);
 

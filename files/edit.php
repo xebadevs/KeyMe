@@ -1,9 +1,9 @@
 <?php
     include_once('session.php');
+    include('connection.php');
+    global $connection;
 
     $ref = $_GET['ref'];
-
-    $connection = mysqli_connect('localhost', 'root', '', 'keyme');
 
     $query = "SELECT * FROM db_passwords WHERE pass_reference = '$ref'";
     $response = mysqli_query($connection, $query);

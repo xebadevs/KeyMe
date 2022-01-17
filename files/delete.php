@@ -1,6 +1,7 @@
 <?php
     include_once('session.php');
-    $connection = mysqli_connect('localhost', 'root', '', 'keyme');
+    include('connection.php');
+    global $connection;
 
     $ref = $_GET['ref'];
 

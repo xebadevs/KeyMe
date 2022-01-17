@@ -6,7 +6,8 @@
         return $res;
     }
 
-    $connection = mysqli_connect('localhost', 'root', '', 'keyme');
+    require('connection.php');
+    global $connection;
 
     $ref = removeSpecialChar($_POST['reference']);
     $user = trim($_POST['user']);
@@ -26,5 +27,6 @@
 
     $sql = "UPDATE db_passwords SET pass_reference = '$ref', pass_username = '$user', pass_password = '$pass_encrypt' WHERE pass_id = $pass_id";
     $query = mysqli_query($connection, $sql);
+    mysqli_close($connection);
 
     header('location:./form-viewall.php');

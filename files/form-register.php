@@ -28,7 +28,8 @@
         }
 
         if($error === NULL) {
-            $connection = mysqli_connect('localhost', 'root', '', 'keyme');
+            require_once('connection.php');
+            global $connection;
 
             $email_exist = "SELECT user_email FROM db_users WHERE user_email='$email'";
             $resp = mysqli_query($connection, $email_exist);

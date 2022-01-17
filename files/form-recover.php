@@ -9,7 +9,8 @@
     $email = trim($_POST['email']);
 
     if($_SERVER['REQUEST_METHOD'] == 'POST' and filter_var($email, FILTER_VALIDATE_EMAIL)){
-        $connection = mysqli_connect('localhost', 'root', '', 'keyme');
+        require('connection.php');
+        global $connection;
         $query = "SELECT user_password FROM db_users WHERE user_email = '$email' LIMIT 1";
         $response = mysqli_query($connection, $query);
         mysqli_close($connection);
@@ -25,7 +26,8 @@
             $random_password = substr(str_shuffle($values), 0, 15);
             $random_hash = password_hash($random_password, PASSWORD_BCRYPT);
 
-            $connection = mysqli_connect('localhost', 'root', '', 'keyme');
+            require('connection.php');
+            global $connection;
             $query_hash = "UPDATE db_users SET user_password = '$random_hash' WHERE user_email = '$email'";
             $res_hash = mysqli_query($connection, $query_hash);
             mysqli_close($connection);
@@ -56,7 +58,7 @@
 
                 $mail->send();
                 echo 'Message has been sent';
-                header('location:./main.php');
+                header('location:./succ-newpass.php');
             } catch (Exception $e) {
                 echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
             }
