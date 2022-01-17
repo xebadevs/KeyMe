@@ -76,7 +76,8 @@ i.icon.user.circle.outline:before {
     width: 95px;
 }
 
-.ui.inverted.primary.button.logout:focus {
+.ui.inverted.primary.button.logout:focus,
+.ui.inverted.primary.button.logout:hover{
     background-color: red;
     color: whitesmoke;
 }
