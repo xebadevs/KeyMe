@@ -51,6 +51,17 @@ a:focus {
 }
 
 
+/* ------------------------- ABOUT  ------------------------- */
+
+.address.card.outline.icon,
+.shield.alternate.icon,
+.save.outline.icon,
+.keyboard.outline.icon {
+    color: #32a1ce;
+    font-size: 100px;
+}
+
+
 /* ------------------------- FOOTER ------------------------- */
 footer {
     display: flex;

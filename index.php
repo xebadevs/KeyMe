@@ -17,7 +17,7 @@
         <div class="x-cont-header">
             <h1 class="ui center aligned header xd">KeyMe</h1>
             <h3>A place to keep your passwords safe</h3>
-            <a href="#" class="read">Read more</a>
+            <a href="./files/about.php" class="read">Read more</a>
         </div>
     </div>
     <div class="empty"></div>
