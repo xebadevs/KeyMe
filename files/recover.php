@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/semantic.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="icon" href="../img/key_icon.ico" sizes="32x32" type="image/vnd.microsoft.icon">
 </head>
 <body>
     <div class="empty"></div>
