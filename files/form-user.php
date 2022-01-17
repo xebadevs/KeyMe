@@ -6,7 +6,7 @@
     $email = $_SESSION['email'];
     $error = NULL;
 
-// VALIDATIONS
+    // VALIDATIONS
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $user = trim($_POST['user']);
         $password = trim($_POST['password']);

@@ -12,19 +12,19 @@
 </head>
 
 <body>
-<div class="middle-empty"></div>
-<div class="cont-icon">
-    <a href="./user.php">
-        <i class="user circle outline icon"></i>
-    </a>
-</div>
-<div class="middle-empty"></div>
-
-<div class="ui grid xd-mt">
-    <div class="x-cont-header">
-        <h1 class="ui center aligned header xd">
-            <a href="main.php">KeyMe</a>
-        </h1>
+    <div class="middle-empty"></div>
+    <div class="cont-icon">
+        <a href="./user.php">
+            <i class="user circle outline icon"></i>
+        </a>
     </div>
-</div>
-<div class="empty"></div>
+    <div class="middle-empty"></div>
+
+    <div class="ui grid xd-mt">
+        <div class="x-cont-header">
+            <h1 class="ui center aligned header xd">
+                <a href="main.php">KeyMe</a>
+            </h1>
+        </div>
+    </div>
+    <div class="empty"></div>

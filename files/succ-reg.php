@@ -41,6 +41,3 @@
 <div>
     <?php require_once('../files/footer.php'); ?>
 </div>
-
-</body>
-</html>

@@ -17,11 +17,9 @@
         $row = mysqli_fetch_row($response);
         $password = $row[0];
 
-
         if ($password == NULL) {
             header('location:./error-user.php'); // USER DIDN'T EXISTS IN DDBB
         } else {
-
             // HASH GENERATION AND UPDATE OF NEW RANDOM PASSWORD IN DDBB
             $values = 'zxcvbnmasdfghjklqewrtyuiop0123456789';
             $random_password = substr(str_shuffle($values), 0, 15);

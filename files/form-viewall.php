@@ -2,8 +2,6 @@
     require_once('header.php');
     include_once('session.php');
 
-    $user_id = '';
-
     $connection = mysqli_connect('localhost', 'root', '', 'keyme');
 
     $email = $_SESSION['email'];
@@ -17,11 +15,10 @@
     $response = mysqli_query($connection, $query);
     mysqli_close($connection);
 
-$ciphering = 'AES-128-CTR';
-$decryption_key = 'closting';
-$options = 0;
-$decryption_iv = '1234567891011121';
-
+    $ciphering = 'AES-128-CTR';
+    $decryption_key = 'closting';
+    $options = 0;
+    $decryption_iv = '1234567891011121';
 ?>
 
 <div>
@@ -81,5 +78,3 @@ $decryption_iv = '1234567891011121';
         Logout
     </a>
 </div>
-</body>
-</html>

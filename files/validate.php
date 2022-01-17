@@ -4,8 +4,6 @@
         $email = trim($_POST['email']);
         $password = trim($_POST['password']);
 
-
-
         if (!empty($email) and !empty($password) and filter_var($email, FILTER_VALIDATE_EMAIL)){
             $connection = mysqli_connect('localhost', 'root', '', 'keyme');
 

@@ -17,60 +17,55 @@
     <script src="semantic/dist/semantic.min.js"></script>
 </head>
 <body>
-<div class="empty"></div>
-<div class="ui grid xd-mt">
-    <div class="x-cont-header">
-        <h1 class="ui center aligned header xd">KeyMe</h1>
-        <h3>A place to keep your passwords safe</h3>
-    </div>
-</div>
-<div class="empty"></div>
-
-<div class="x-cont-login">
-    <div class="ui column grid">
-        <div class="column">
-            <form action="./form-register.php" method="post">
-                <div class="ui form">
-                    <div class="field">
-                        <label>Email</label>
-                        <div class="ui left icon input">
-                            <input type="text" placeholder="Username" name="email" required autofocus>
-                            <i class="user icon"></i>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label>Password</label>
-                        <div class="ui left icon input">
-                            <input type="password" placeholder="Create your Master Password" name="password" maxlength="40" required>
-                            <i class="lock icon"></i>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label>Re Password</label>
-                        <div class="ui left icon input">
-                            <input type="password" placeholder="Repeat your Master Password" name="repassword" maxlength="40" required>
-                            <i class="lock icon"></i>
-                        </div>
-                    </div>
-                    <div class="xd-df">
-                        <button class="ui inverted primary submit button">
-                            <p>REGISTER</p>
-                        </button>
-                    </div>
-                    <br>
-                </div>
-            </form>
+    <div class="empty"></div>
+    <div class="ui grid xd-mt">
+        <div class="x-cont-header">
+            <h1 class="ui center aligned header xd">KeyMe</h1>
+            <h3>A place to keep your passwords safe</h3>
         </div>
     </div>
-</div>
+    <div class="empty"></div>
 
-<div class="empty"></div>
+    <div class="x-cont-login">
+        <div class="ui column grid">
+            <div class="column">
+                <form action="./form-register.php" method="post">
+                    <div class="ui form">
+                        <div class="field">
+                            <label>Email</label>
+                            <div class="ui left icon input">
+                                <input type="text" placeholder="Username" name="email" required autofocus>
+                                <i class="user icon"></i>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Password</label>
+                            <div class="ui left icon input">
+                                <input type="password" placeholder="Create your Master Password" name="password" maxlength="40" required>
+                                <i class="lock icon"></i>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Re Password</label>
+                            <div class="ui left icon input">
+                                <input type="password" placeholder="Repeat your Master Password" name="repassword" maxlength="40" required>
+                                <i class="lock icon"></i>
+                            </div>
+                        </div>
+                        <div class="xd-df">
+                            <button class="ui inverted primary submit button">
+                                <p>REGISTER</p>
+                            </button>
+                        </div>
+                        <br>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
-<div>
-    <?php require_once('../files/footer.php'); ?>
-</div>
+    <div class="empty"></div>
 
-
-
-</body>
-</html>
+    <div>
+        <?php require_once('../files/footer.php'); ?>
+    </div>

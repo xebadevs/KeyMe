@@ -35,60 +35,59 @@
 </head>
 
 <body>
-<div class="empty"></div>
-<div class="ui grid xd-mt">
-    <div class="x-cont-header">
-        <h1 class="ui center aligned header xd">
-            <a href="main.php">KeyMe</a>
-        </h1>
-    </div>
-</div>
-<div class="empty"></div>
-
-<div class="x-cont-add">
-    <div class="ui column grid">
-        <div class="column">
-            <form action="./form-edit.php" method="post">
-                <div class="ui form">
-                    <div class="field">
-                        <label>Reference</label>
-                        <div class="ui left icon input">
-                            <input type="hidden" name="edit_id" value="<?= $reference ?>">
-                            <input type="text" placeholder="Insert the reference" name="reference" value="<?= $ref ?>" required autofocus>
-                            <i class="thumbtack icon"></i>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label>User</label>
-                        <div class="ui left icon input">
-                            <input type="text" placeholder="Insert the user" name="user" value="<?= $user ?>" required>
-                            <i class="user icon"></i>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label>Password</label>
-                        <div class="ui left icon input">
-                            <input type="text" placeholder="Insert the password" name="password" value="<?php
-                                $pass_decrypt = openssl_decrypt($password, $ciphering, $decryption_key, $options, $decryption_iv);
-                                echo $pass_decrypt;
-                            ?>" required>
-                            <i class="lock open icon"></i>
-                        </div>
-                    </div>
-                    <div class="cont-span">
-                        <span> Click to... </span>
-                    </div>
-                    <div class="xd-df">
-                            <button class="ui inverted primary submit button">
-                                Save
-                            </button>
-                    </div>
-                    <br>
-                </div>
-            </form>
+    <div class="empty"></div>
+    <div class="ui grid xd-mt">
+        <div class="x-cont-header">
+            <h1 class="ui center aligned header xd">
+                <a href="main.php">KeyMe</a>
+            </h1>
         </div>
     </div>
-</div>
+    <div class="empty"></div>
 
+    <div class="x-cont-add">
+        <div class="ui column grid">
+            <div class="column">
+                <form action="./form-edit.php" method="post">
+                    <div class="ui form">
+                        <div class="field">
+                            <label>Reference</label>
+                            <div class="ui left icon input">
+                                <input type="hidden" name="edit_id" value="<?= $reference ?>">
+                                <input type="text" placeholder="Insert the reference" name="reference" value="<?= $ref ?>" required autofocus>
+                                <i class="thumbtack icon"></i>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>User</label>
+                            <div class="ui left icon input">
+                                <input type="text" placeholder="Insert the user" name="user" value="<?= $user ?>" required>
+                                <i class="user icon"></i>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Password</label>
+                            <div class="ui left icon input">
+                                <input type="text" placeholder="Insert the password" name="password" value="<?php
+                                    $pass_decrypt = openssl_decrypt($password, $ciphering, $decryption_key, $options, $decryption_iv);
+                                    echo $pass_decrypt;
+                                ?>" required>
+                                <i class="lock open icon"></i>
+                            </div>
+                        </div>
+                        <div class="cont-span">
+                            <span> Click to... </span>
+                        </div>
+                        <div class="xd-df">
+                                <button class="ui inverted primary submit button">
+                                    Save
+                                </button>
+                        </div>
+                        <br>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

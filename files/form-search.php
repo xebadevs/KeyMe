@@ -1,5 +1,4 @@
 <?php
-
     require_once('session.php');
     require_once('header.php');
     require_once ('search.php');
@@ -17,7 +16,7 @@
     $query = "SELECT * FROM db_passwords WHERE fk_user_id = '$id' AND pass_reference LIKE '%$search%'";
     $response = mysqli_query($connection, $query);
     mysqli_close($connection);
-    
+
     $ciphering = 'AES-128-CTR';
     $decryption_key = 'closting';
     $options = 0;
@@ -77,5 +76,3 @@
         Logout
     </a>
 </div>
-</body>
-</html>
