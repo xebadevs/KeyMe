@@ -7,7 +7,14 @@ body {
 .ui.center.aligned.header.xd {
     font-size: 4em;
     color: whitesmoke;
-    margin: 30px;
+    margin: 25px;
+}
+
+.read {
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    margin: 15px auto;
 }
 
 .x-cont-header {
@@ -72,5 +79,11 @@ body {
 @media screen and (max-width: 550px) and (orientation: portrait){
     body {
         background-size: auto;
+    }
+}
+
+@media screen and (max-width: 393px) and (orientation: portrait){
+    .x-cont-login {
+        width: 350px;
     }
 }
