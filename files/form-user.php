@@ -28,5 +28,5 @@
         $response = mysqli_query($connection, $query);
 
         mysqli_close($connection);
-        header('location:./logout.php'); // FOR CHECK
+        header('location:./succ-newdata.php'); // FOR CHECK
     }

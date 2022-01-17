@@ -1,3 +1,8 @@
+<?php
+    require_once('session.php');
+    session_unset();
+?>
+
 <head>
     <link rel="stylesheet" href="../css/semantic.min.css">
     <link rel="stylesheet" href="../css/styles.css">
