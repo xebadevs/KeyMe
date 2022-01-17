@@ -41,18 +41,18 @@
                 $mail->isSMTP();
                 $mail->Host = 'smtp.gmail.com';
                 $mail->SMTPAuth = true;
-                $mail->Username = 'agitelfo@gmail.com';
-                $mail->Password = 'SurrenderToW4t3r';
+                $mail->Username = 'xdmailing@gmail.com';
+                $mail->Password = 'YWKeiE72uec6Gj';
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
                 $mail->Port = 465;
 
                 //Recipients
-                $mail->setFrom('agitelfo@gmail.com', 'KeyMe: Recovering Mail');
+                $mail->setFrom('xdmailing@gmail.com', 'KeyMe: Recovering Password Email');
                 $mail->addAddress($email, 'KeyMe');
 
                 //Content
                 $mail->isHTML(true);
-                $mail->Subject = 'Test message';
+                $mail->Subject = 'KeyMe';
                 $mail->Body = "<p>You have required your <b>Master Password</b>, wich is:</p> <h3 style='color:red;'>$random_password</style></h3><p>Please save it in a highly secure place. Now you can access from:</p><a href='http://localhost/projects/portfolio/keyme/KeyMe/index.php'>KeyMe WebSite</a>";
                  $mail->AltBody = "You have required your Master Password, wich is: [$random_password]. Please save it in a highly secure place. Now you can access from: http://localhost/projects/portfolio/keyme/KeyMe/index.php";
 
