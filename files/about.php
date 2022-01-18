@@ -43,11 +43,10 @@
     </div>
 </div>
 
-
 <div class="xd-df">
-    <button class="ui inverted primary submit button">
-        <p>LOGIN</p>
-    </button>
+    <a href="./register.php" class="ui inverted primary button logout">
+        REGISTER
+    </a>
 </div>
 
 <div>
