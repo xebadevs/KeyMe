@@ -34,7 +34,7 @@
             </div>
             <div class="box c">
                 <i class="save outline icon"></i>
-                <h3>3. Start saving <br> your data.</h3>
+                <h3>3. Start saving <br> your data</h3>
             </div>
             <div class="box d">
                 <i class="keyboard outline icon"></i>
@@ -43,7 +43,7 @@
     </div>
 </div>
 
-<div class="xd-df">
+<div class="xd-df reg-mb">
     <a href="./register.php" class="ui inverted primary button logout">
         REGISTER
     </a>

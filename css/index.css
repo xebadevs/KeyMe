@@ -72,7 +72,7 @@ body {
 /* ------------------------- ABOUT ------------------------- */
 .x-cont-header-abt{
     width: 80%;
-    margin: auto;
+    margin: 0 auto 30px auto;
     padding-bottom: 30px;
 
     /* Glass style */
@@ -85,21 +85,18 @@ body {
 
 .cont-about {
     display: flex;
-    /*flex-direction: column;*/
     justify-content: center;
-    margin: auto;
+    margin: 0 auto 30px auto;
     overflow: auto;
     height: 45%;
 }
 
 .about {
-    /*border: 1px solid yellow;*/
     width: 65%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-auto-rows: 200px;
     grid-gap: 60px;
-    color: #444;
     margin: auto;
 }
 
@@ -114,7 +111,6 @@ body {
     color: #fff;
     border-radius: 5px;
     padding: 20px;
-    font-size: 150%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -129,11 +125,48 @@ body {
     margin-bottom: 10px;
 }
 
+.reg-mb {
+    margin-bottom: 30px;
+}
+
 
 /* ------------------------- MEDIA QUERIES ------------------------- */
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+    .cont-about {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 30px auto;
+        overflow: auto;
+        height: 45%;
+    }
+    .about {
+        width: 90%;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-auto-rows: 200px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    .about {
+        grid-gap: 10px;
+    }
+}
+
 @media screen and (max-width: 1024px) and (orientation: portrait){
     body {
         background-size: cover;
+    }
+}
+
+@media screen and (max-width: 912px) and (orientation: portrait){
+    .cont-about {
+        height: 55%;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait){
+    .cont-about {
+        height: 50%;
     }
 }
 

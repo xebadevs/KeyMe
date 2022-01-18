@@ -99,8 +99,15 @@ footer {
 }
 
 /* Nest Hub */
-@media screen and (max-width: 1024px) and (orientation: landscape){
+@media screen and (max-width: 1280px) and (orientation: landscape){
     footer {
         position: relative;
+    }
+    .address.card.outline.icon,
+    .shield.alternate.icon,
+    .save.outline.icon,
+    .keyboard.outline.icon {
+        color: #32a1ce;
+        font-size: 50px;
     }
 }
