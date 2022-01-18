@@ -28,6 +28,15 @@
     <i class="keyboard outline icon"></i>
 </div>
 
+<div class="cont-about">
+    <div class="about">
+            <div class="box a">A</div>
+            <div class="box b">B</div>
+            <div class="box c">C</div>
+            <div class="box d">D</div>
+    </div>
+</div>
+
 <div class="empty"></div>
 
 <div>
