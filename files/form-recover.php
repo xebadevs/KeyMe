@@ -37,7 +37,7 @@
 
             try {
                 //Server settings
-                $mail->SMTPDebug = 2;
+                $mail->SMTPDebug = 0;
                 $mail->isSMTP();
                 $mail->Host = 'smtp.gmail.com';
                 $mail->SMTPAuth = true;
@@ -57,7 +57,6 @@
                  $mail->AltBody = "You have required your Master Password, wich is: [$random_password]. Please save it in a highly secure place. Now you can access from: http://localhost/projects/portfolio/keyme/KeyMe/index.php";
 
                 $mail->send();
-                echo 'Message has been sent';
                 header('location:./succ-newpass.php');
             } catch (Exception $e) {
                 echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
