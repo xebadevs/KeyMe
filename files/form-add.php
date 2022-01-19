@@ -27,10 +27,9 @@
             $row = mysqli_fetch_row($response);
             $user_id = $row[0];
 
+            // CHECK THAT THE REFERENCE IS NOT REPEATED
             $query_ref = "SELECT pass_reference FROM db_passwords WHERE fk_user_id = '$user_id'";
             $resp_ref = mysqli_query($connection, $query_ref);
-
-            // CHECK THAT THE REFERENCE IS NOT REPEATED
             while($res=mysqli_fetch_assoc($resp_ref)){
                 $v = $res['pass_reference'];
                 if($v === $reference){
@@ -41,8 +40,8 @@
         header('location:./error-add.php'); // INCOMPLETE QUERY
     }
 
+    // OPENSSL FOR PASSWORD
     if($error === NULL){
-        // OPENSSL FOR PASSWORD
         $ciphering = "AES-128-CTR";
         $iv_length = openssl_cipher_iv_length($ciphering);
         $options = 0;

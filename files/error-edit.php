@@ -1,0 +1,19 @@
+<?php
+require_once('header.php');
+?>
+
+<div class="x-cont-login">
+    <div class="ui column grid">
+        <div class="column">
+            <div class="ui form">
+                <h3 class="error">ERROR</h3>
+                <h5>Reference cannot be repeated</h5>
+                <div class="xd-df">
+                    <a href="./add.php" class="ui inverted red submit button">
+                        TRY AGAIN
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
