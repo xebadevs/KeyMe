@@ -42,11 +42,11 @@
                 while($res=mysqli_fetch_assoc($response)){ ?>
                 <tr>
                     <td>
-                        <p> <?=$res['pass_reference']?> </p>
+                        <p> <?= $res['pass_reference'] ?> </p>
                     </td>
                     <td>
                         <div class="content">
-                            <p class="username"> <?=$res['pass_username']?> </p>
+                            <p class="username"> <?= $res['pass_username'] ?> </p>
                             <div class="sub header">
                                 <p>
                                     <?php
