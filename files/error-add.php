@@ -7,8 +7,9 @@
         <div class="column">
             <div class="ui form">
                 <h3 class="error">ERROR</h3>
-                <h5>Maximum of 40 characters</h5>
+                <h5>Reference cannot be repeated</h5>
                 <h5>Special characters are not allowed</h5>
+                <h5>Maximum of 40 characters</h5>
                 <div class="xd-df">
                     <a href="./add.php" class="ui inverted red submit button">
                         TRY AGAIN

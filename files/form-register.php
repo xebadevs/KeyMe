@@ -34,9 +34,9 @@
             $email_exist = "SELECT user_email FROM db_users WHERE user_email='$email'";
             $resp = mysqli_query($connection, $email_exist);
 
-            $closting = mysqli_num_rows($resp);
+            $email_num = mysqli_num_rows($resp);
 
-            if($closting > 0){
+            if($email_num > 0){
                 mysqli_close($connection);
                 header('location:./error-reg.php'); // EXISTING USER!!
             }else{

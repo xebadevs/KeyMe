@@ -42,7 +42,6 @@
             </div>
     </div>
 </div>
-
 <div class="xd-df reg-mb">
     <a href="./register.php" class="ui inverted primary button logout">
         REGISTER
