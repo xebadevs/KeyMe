@@ -32,6 +32,16 @@ But... news ideas were emerging in the process, so at the end includes also:
 
 
 
+## Build With
+
+- `PHP` 7+.
+- `MySQL` for Database Management.
+- `PHPMailer` as PHP Mailing Library.
+- `Semantic UI` as CSS Framework.
+
+Extra Tools:
+- `Photoshop` for the portfolio images edition.
+
 ## License
 
 Distributed under Apache License, Version 2.0, January 2004. See `LICENSE.txt` for more information.
