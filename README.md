@@ -46,6 +46,18 @@ Extra Tools:
 
 
 
+## Technical Comments
+
+Looking at the files structure and the code, this project allowed me to understand a lot of things.
+
+In first place, about the improvisation. It seems funny at first, but it became a headeache. Start any project with a good planification is totally neccesary.
+
+I really missed the opportunity to create components. To connect the backend with the frontend through APIs. To integrate PHP with JavaScript for a better user experience.
+
+<br>
+
+
+
 ## Local Use
 
 A local usage should include not just a local server distribution program but also the construction itself of the database.
