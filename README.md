@@ -69,6 +69,10 @@ Download the project o merge it in `htdocs` folder inside the installation path 
 
 Create a Database and named it `keyme`. Copy the content of the  `DDBB SQL Query` file and run the script.
 
+Alter the `connection.php` file in `files` folder, comment the external host connection line and uncomment the local connection one.
+
+Check too the PHPMailer connection data.
+
 
 <br>
 
