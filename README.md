@@ -34,13 +34,27 @@ But... news ideas were emerging in the process, so at the end includes also:
 
 ## Build With
 
-- `PHP` 7+.
+- `PHP 7+`.
 - `MySQL` for Database Management.
 - `PHPMailer` as PHP Mailing Library.
 - `Semantic UI` as CSS Framework.
 
 Extra Tools:
 - `Photoshop` for the portfolio images edition.
+
+<br>
+
+
+
+## Local Use
+
+A local usage should include not just a local server distribution program but also the construction itself of the database.
+
+So in this case we do not recommend a local use.
+
+<br>
+
+
 
 ## License
 
