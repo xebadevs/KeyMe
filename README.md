@@ -62,9 +62,13 @@ At the same time, I know better now the reasons and convenience of doing it that
 
 ## Local Use
 
-A local usage should include not just a local server distribution program but also the construction itself of the database.
 
-So in this case we do not recommend a local use.
+I recommend to use `XAMPP` (Windows / MacOS) or `LAMP` (Linux) as an Apache distribution to host a server locally.
+
+Download the project o merge it in `htdocs` folder inside the installation path of your **XAMPP** / **LAMP**.
+
+Create a Database and named it `keyme`. Copy the content of the  `DDBB SQL Query` file and run the script.
+
 
 <br>
 
