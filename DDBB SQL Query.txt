@@ -1,0 +1,35 @@
+-- dbname: keyme
+
+CREATE TABLE `db_passwords` (
+  `fk_user_id` int(11) NOT NULL,
+  `pass_id` int(11) NOT NULL,
+  `pass_reference` varchar(40) NOT NULL,
+  `pass_username` varchar(40) NOT NULL,
+  `pass_password` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE `db_users` (
+  `user_id` int(11) NOT NULL,
+  `user_email` varchar(25) NOT NULL,
+  `user_password` varchar(60) NOT NULL,
+  `user_accountstate` tinyint(4) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+ALTER TABLE `db_passwords`
+  ADD PRIMARY KEY (`pass_id`),
+  ADD KEY `fk_user_id` (`fk_user_id`);
+
+ALTER TABLE `db_users`
+  ADD PRIMARY KEY (`user_id`);
+
+ALTER TABLE `db_passwords`
+  MODIFY `pass_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
+
+ALTER TABLE `db_users`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+
+ALTER TABLE `db_passwords`
+  ADD CONSTRAINT `db_passwords_ibfk_1` FOREIGN KEY (`fk_user_id`) REFERENCES `db_users` (`user_id`);
+COMMIT;
