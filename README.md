@@ -54,6 +54,8 @@ In first place, about the improvisation. It seems funny at first, but it became 
 
 I really missed the opportunity to create components. To connect the backend with the frontend through APIs. To integrate PHP with JavaScript for a better user experience.
 
+At the same time, I know better now the reasons and convenience of doing it that way. So I will keep that learning, and this project will be a reminder to avoid bad practices.
+
 <br>
 
 
