@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/semantic.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
 
     <div class="ui grid xd-mt">
         <div class="x-cont-header">
-            <h1 class="ui center aligned header xd">
+            <h1 class="ui center aligned header xd xd-title">
                 <a href="main.php">KeyMe</a>
             </h1>
         </div>

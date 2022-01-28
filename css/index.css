@@ -5,7 +5,6 @@ body {
 }
 
 .ui.center.aligned.header.xd {
-    font-family: 'Orbitron', sans-serif;
     font-size: 4em;
     color: whitesmoke;
     margin: 25px;
@@ -35,7 +34,8 @@ body {
     height: 8%;
 }
 
-h3 {
+.ui.center.aligned.header.xd.xd-title,
+.xd-title {
     font-family: 'Orbitron', sans-serif;
 }
 

@@ -16,8 +16,8 @@
     <div class="empty"></div>
     <div class="ui grid xd-mt">
         <div class="x-cont-header">
-            <h1 class="ui center aligned header xd">KeyMe</h1>
-            <h3>A place to keep your passwords safe</h3>
+            <h1 class="ui center aligned header xd xd-title">KeyMe</h1>
+            <h3 class="xd-title">A place to keep your passwords safe</h3>
             <a href="./files/about.php" class="read">Read more</a>
         </div>
     </div>

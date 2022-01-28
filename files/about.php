@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="../css/semantic.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap">
 </head>
 <body>
 <div class="empty"></div>
 <div class="ui grid xd-mt">
     <div class="x-cont-header-abt">
-        <h1 class="ui center aligned header xd">KeyMe</h1>
+        <h1 class="ui center aligned header xd xd-title">KeyMe</h1>
         <h3>Our service provides you with the opportunity to keep your passwords safe</h3>
         <h3>We apply encryption / decryption methods and different validations.</h3>
         <h3>Light and easy to use. Just...</h3>

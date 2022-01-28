@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap">
     <script
             src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -21,8 +22,8 @@
     <div class="empty"></div>
     <div class="ui grid xd-mt">
         <div class="x-cont-header">
-            <h1 class="ui center aligned header xd">KeyMe</h1>
-            <h3>A place to keep your passwords safe</h3>
+            <h1 class="ui center aligned header xd xd-title">KeyMe</h1>
+            <h3 class="xd-title">A place to keep your passwords safe</h3>
         </div>
     </div>
     <div class="empty"></div>
