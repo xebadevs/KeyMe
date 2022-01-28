@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/semantic.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap">
 </head>
 <body>
     <div class="empty"></div>
