@@ -38,7 +38,7 @@
                         <div class="field">
                             <label>User</label>
                             <div class="ui left icon input">
-                                <input type="text" placeholder="Insert the user" name="user" value=" <?= $email ?> " required>
+                                <input type="text" placeholder="Insert the user" name="user" value=" <?= $email ?> " required disabled>
                                 <i class="user icon"></i>
                             </div>
                         </div>
@@ -50,7 +50,7 @@
                             </div>
                         </div>
                         <div class="cont-span">
-                            <span> Change my user account </span>
+                            <span> Change my password </span>
                         </div>
                         <div class="xd-df">
                             <button class="ui inverted primary submit button">
