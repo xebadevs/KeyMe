@@ -1,3 +1,9 @@
+/*  ------------------------- HEADER TITLE  ------------------------- */
+
+.ui.center.aligned.header.xd.xd-title {
+    font-family: 'Orbitron', sans-serif;
+}
+
 /*  ------------------------- ERROR / SUCCESS BOXES  ------------------------- */
 
 .x-cont-login {
