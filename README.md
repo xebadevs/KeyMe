@@ -51,9 +51,17 @@ Home page on three different devices
 
 ![Processed - Triple mockup](https://user-images.githubusercontent.com/91569646/152273424-b7314145-ebbc-41cb-96cf-4f7c3726d3d5.jpg)
 
+<br>
+
 After registration and successful login, some saved passwords, mobile version
 
 ![Processed - Mobile (dark)](https://user-images.githubusercontent.com/91569646/152273433-4c735799-a64c-48df-afc9-872a33e5763e.jpg)
+
+<br>
+
+Some other saved passwords, monitor version
+
+![Processed - Monitor (blue)](https://user-images.githubusercontent.com/91569646/152273418-2e3d7539-5c0a-46e8-9ce8-27e9327e4b44.jpg)
 
 <br>
 
