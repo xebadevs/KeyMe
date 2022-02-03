@@ -178,6 +178,11 @@ body {
     body {
         background-size: auto;
     }
+    .x-cont-header {
+        width: 80%;
+        margin: auto;
+        height: 230px;
+    }
 }
 
 @media screen and (max-width: 393px) and (orientation: portrait){
