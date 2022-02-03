@@ -47,6 +47,8 @@ Extra Tools:
 
 ## Preview
 
+Home page on three different devices
+
 ![Processed - Triple mockup](https://user-images.githubusercontent.com/91569646/152273424-b7314145-ebbc-41cb-96cf-4f7c3726d3d5.jpg)
 
 
