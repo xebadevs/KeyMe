@@ -163,9 +163,6 @@ body {
 }
 
 @media screen and (max-width: 912px) and (orientation: portrait){
-    /*body {*/
-    /*    background-size: cover;*/
-    /*}*/
     .cont-about {
         height: 55%;
     }

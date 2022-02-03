@@ -7,7 +7,7 @@
     <style>
         body {
             background: url("../img/bgindex.jpg") no-repeat;
-            background-size: auto;
+            background-size: cover;
         }
     </style>
 </head>
