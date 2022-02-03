@@ -47,7 +47,7 @@ Extra Tools:
 
 ## Preview
 
-Home page on three different devices
+Initial Login page on three different devices
 
 ![Processed - Triple mockup](https://user-images.githubusercontent.com/91569646/152273424-b7314145-ebbc-41cb-96cf-4f7c3726d3d5.jpg)
 
@@ -74,30 +74,18 @@ In first place, about the improvisation. It seems funny at first, but it became 
 
 I really missed the opportunity to create components. To connect the backend with the frontend through APIs. To integrate PHP with JavaScript for a better user experience.
 
-At the same time, I know better now the reasons and convenience of doing it that way. So I will keep that learning, and this project will be a reminder to avoid bad practices.
+At the same time, I know better now the reasons and convenience of doing it that way. So I will keep that learning, and this project will be a reminder to avoid impulsive practices.
 
 <br>
-
-
-
-## Local Use
-
-
-I recommend to use `XAMPP` (Windows / MacOS) or `LAMP` (Linux) as an Apache distribution to host a server locally.
-
-Download the project o merge it in `htdocs` folder inside the installation path of your **XAMPP** / **LAMP**.
-
-Create a Database and named it `keyme`. Copy the content of the  `DDBB SQL Query` file and run the script.
-
-Alter the `connection.php` file in `../files` folder, comment the external host connection line and uncomment the local connection one.
-
-Check too the PHPMailer connection data.
-
-
-<br>
-
 
 
 ## License
 
 Distributed under Apache License, Version 2.0, January 2004. See `LICENSE.txt` for more information.
+
+<br>
+
+
+## Special thanks
+
+To `Tomislav Jakupec` for his beautiful designs that I used as backgrounds.
