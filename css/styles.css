@@ -95,6 +95,9 @@ footer {
     font-weight: normal;
 }
 
+.footer-color {
+    font-size: 10rem;
+}
 
 /* ------------------------------ MEDIA QUERIES ------------------------------ */
 /* Full Monitor */
