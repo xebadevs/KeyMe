@@ -53,8 +53,8 @@
                 //Content
                 $mail->isHTML(true);
                 $mail->Subject = 'KeyMe';
-                $mail->Body = "<p>You have required your <b>Master Password</b>, wich is:</p> <h3 style='color:red;'>$random_password</style></h3><p>Please save it in a highly secure place. Now you can access from:</p><a href='http://localhost/projects/portfolio/keyme/KeyMe/index.php'>KeyMe WebSite</a>";
-                 $mail->AltBody = "You have required your Master Password, wich is: [$random_password]. Please save it in a highly secure place. Now you can access from: http://localhost/projects/portfolio/keyme/KeyMe/index.php";
+                $mail->Body = "<p>You have required your <b>Master Password</b>, wich is:</p> <h3 style='color:red;'>$random_password</style></h3><p>Please save it in a highly secure place. Now you can access from:</p><a href='http://keyme.epizy.com/index.php'>KeyMe WebSite</a>";
+                 $mail->AltBody = "You have required your Master Password, wich is: [$random_password]. Please save it in a highly secure place. Now you can access from: http://keyme.epizy.com/index.php";
 
                 $mail->send();
                 header('location:./succ-newpass.php');

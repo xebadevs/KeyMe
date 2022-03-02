@@ -22,16 +22,8 @@
     $response = mysqli_query($connection, $query);
     $row = mysqli_fetch_row($response);
     $user_id = $row[0];
+    $error = NULL;
 
-    // CHECK THAT THE REFERENCE IS NOT REPEATED
-    $query_ref = "SELECT pass_reference FROM db_passwords WHERE fk_user_id = '$user_id'";
-    $resp_ref = mysqli_query($connection, $query_ref);
-    while($res=mysqli_fetch_assoc($resp_ref)){
-        $v = $res['pass_reference'];
-        if($v === $ref){
-            $error = true;
-        }
-    }
 
     // OPENSSL FOR PASSWORD
     if($error === NULL) {
