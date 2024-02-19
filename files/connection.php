@@ -1,7 +1,21 @@
 <?php
-    // XAMPP CONNECTION
-    $connection = mysqli_connect('localhost', 'root', '', 'keyme');
+$dotenv = parse_ini_file('../.env');
 
-    // INFINITYFREE HOSTING
-//        $connection = mysqli_connect('sql104.epizy.com', 'epiz_30837348',
-//            'nOa5Bcem97WbYR', 'epiz_30837348_keyme', 3306);
+// environment
+if ($dotenv['ENV_SETTLED'] === 'PROD') {
+    $connection = mysqli_connect(
+        $dotenv['PROD_HOST'],
+        $dotenv['PROD_USERNAME'],
+        $dotenv['PROD_PASSWORD'],
+        $dotenv['PROD_DB_NAME'],
+        $dotenv['PROD_PORT']
+    );
+} else {
+    $connection = mysqli_connect(
+        $dotenv['LOCAL_HOST'],
+        $dotenv['LOCAL_USERNAME'],
+        $dotenv['LOCAL_PASSWORD'],
+        $dotenv['LOCAL_DB_NAME'],
+        $dotenv['LOCAL_PORT']
+    );
+}
