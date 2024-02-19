@@ -32,6 +32,7 @@
     margin: 50px auto 10px auto;
 }
 
+
 /* ------------------------- ERROR / SUCCESS COLORS ------------------------- */
 .error {
     color: orangered;
@@ -97,6 +98,7 @@ footer {
 
 
 /* ------------------------------ MEDIA QUERIES ------------------------------ */
+
 /* Full Monitor */
 @media screen and (max-width: 1920px) and (orientation: landscape){
     footer {
