@@ -19,7 +19,7 @@
                     </div>
 
                     <div class="wrong-pass">
-<!--                        <span> ERROR. PLEASE TRY AGAIN </span>-->
+                        <!-- <span> ERROR. PLEASE TRY AGAIN </span> -->
                         <span></span>
                     </div>
 

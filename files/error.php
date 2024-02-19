@@ -1,13 +1,13 @@
 <?php
-    $error = 'ERROR. PLEASE TRY AGAIN';
+$error = 'ERROR. PLEASE TRY AGAIN';
 ?>
 
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>KeyMe</title>
     <link rel="icon" href="../img/key_icon.ico" sizes="32x32" type="image/vnd.microsoft.icon">
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap">
 </head>
+
 <body>
     <div class="empty"></div>
     <div class="ui grid xd-mt">
@@ -48,7 +49,7 @@
                             </div>
 
                             <div class="wrong-pass">
-                                    <span> <?= $error ?> </span>
+                                <span> <?= $error ?> </span>
                             </div>
 
                             <div class="xd-df">
@@ -78,4 +79,5 @@
         <?php require_once('./footer.php'); ?>
     </div>
 </body>
+
 </html>
